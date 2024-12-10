@@ -1,8 +1,41 @@
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
 import { MapPinIcon, PhoneIcon, MailIcon, SendIcon } from "lucide-react";
+import { useState } from "react"; 
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceId = "service_ccm7sfw"; 
+    const templateId = "template_m7rwozo"; 
+    const publicKey = "8fhpfjLJAZs8-jOQw";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: 'Web Wizard',
+      message: message,
+    };
+
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        alert('Message sent successfully! - Abdul Salam will get back to you soon!', response);
+        
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.error("Error sending email", error);
+      });
+  };
+
   return (
     <div className="py-24 relative">
       <div className="absolute inset-0 -z-10">
@@ -73,22 +106,32 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
+            onSubmit={handleSubmit}
             className="space-y-4 bg-neutral-900/50 backdrop-blur-sm rounded-xl border border-neutral-800/50 p-6"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
+                name="name"
                 type="text"
                 placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)} // Handle name input
                 className="w-full px-4 py-3 bg-neutral-800 rounded-lg border border-neutral-700 focus:outline-none focus:border-purple-500 text-neutral-300"
               />
               <input
+                name="email"
                 type="email"
                 placeholder="Your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)} // Handle email input
                 className="w-full px-4 py-3 bg-neutral-800 rounded-lg border border-neutral-700 focus:outline-none focus:border-purple-500 text-neutral-300"
               />
             </div>
             <textarea
+              name="message"
               placeholder="Your Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)} // Handle message input
               rows={4}
               className="w-full px-4 py-3 bg-neutral-800 rounded-lg border border-neutral-700 focus:outline-none focus:border-purple-500 text-neutral-300"
             />

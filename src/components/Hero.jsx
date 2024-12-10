@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../constants";
 import profilePicture from "../assets/mypicture1.jpg";
 import { motion } from "framer-motion";
-import { DownloadIcon, ArrowRightIcon } from "lucide-react";
+import { DownloadIcon } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -20,7 +20,7 @@ const Hero = () => {
               transition={{ duration: 0.6 }}
             >
               <motion.h1
-                className="text-5xl lg:text-6xl font-bold"
+                className="text-3xl lg:text-6xl font-bold whitespace-nowrap"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -59,13 +59,6 @@ const Hero = () => {
               >
                 <DownloadIcon className="w-5 h-5" />
                 Download CV
-              </a>
-              <a
-                href="#contact"
-                className="flex items-center gap-2 px-6 py-3 border border-neutral-700 text-neutral-300 rounded-xl hover:bg-neutral-800 transition-all"
-              >
-                Contact Me
-                <ArrowRightIcon className="w-5 h-5" />
               </a>
             </motion.div>
           </div>
