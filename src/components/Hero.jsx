@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePicture from "../assets/mypicture1.jpg";
+import profilePicture from "../assets/mypicture.jpg";
 import { motion } from "framer-motion";
 import { DownloadIcon } from "lucide-react";
 
@@ -53,7 +53,7 @@ const Hero = () => {
               className="flex flex-wrap gap-4"
             >
               <a
-                href="/resume.pdf"
+                href="/Abdul Salam-CV.pdf"
                 download
                 className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all"
               >

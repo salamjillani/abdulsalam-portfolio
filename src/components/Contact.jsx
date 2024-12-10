@@ -1,35 +1,39 @@
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
 import { MapPinIcon, PhoneIcon, MailIcon, SendIcon } from "lucide-react";
-import { useState } from "react"; 
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceId = "service_ccm7sfw"; 
-    const templateId = "template_m7rwozo"; 
+    const serviceId = "service_ccm7sfw";
+    const templateId = "template_m7rwozo";
     const publicKey = "8fhpfjLJAZs8-jOQw";
 
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_name: 'Web Wizard',
+      to_name: "Web Wizard",
       message: message,
     };
 
-    emailjs.send(serviceId, templateId, templateParams, publicKey)
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
-        alert('Message sent successfully! - Abdul Salam will get back to you soon!', response);
-        
-        setName('');
-        setEmail('');
-        setMessage('');
+        alert(
+          "Message sent successfully! - Abdul Salam will get back to you soon!",
+          response
+        );
+
+        setName("");
+        setEmail("");
+        setMessage("");
       })
       .catch((error) => {
         console.error("Error sending email", error);

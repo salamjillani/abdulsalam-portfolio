@@ -15,14 +15,7 @@ export const EXPERIENCES = [
     role: "Front End Developer",
     company: "CloudLink",
     description: `Developed and delivered front-end websites for diverse clients. Embrace and integrate emerging industry trends into strategies. Streamlined website development processes, resulting in improved efficiency and faster project turnaround.`,
-    technologies: [
-      "React",
-      "Javascript",
-      "Tailwind",
-      "HTML",
-      "CSS",
-      "Figma",
-    ],
+    technologies: ["React", "Javascript", "HTML", "CSS", "Figma"],
   },
   {
     year: "2022 - 2022",

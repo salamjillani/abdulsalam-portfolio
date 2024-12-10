@@ -8,6 +8,7 @@ import {
   FaCss3Alt,
   FaJsSquare,
 } from "react-icons/fa";
+import expressPicture from "../assets/expjs.png";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -54,6 +55,18 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <FaNodeJs className="text-7xl text-green-600" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(1.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <img
+            src={expressPicture}
+            alt="Express.js"
+            className="w-16 h-16 object-contain"
+          />
         </motion.div>
         <motion.div
           variants={iconVariants(5)}
