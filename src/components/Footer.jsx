@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import { HeartIcon } from "lucide-react";
 
 const Footer = () => {
