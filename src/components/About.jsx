@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import aboutImage from "../assets/about.jpg";
 import { ABOUT_TEXT } from "../constants";
 
 const About = () => {
@@ -42,7 +41,7 @@ const About = () => {
               =
               <div className="relative rounded-2xl overflow-hidden p-1 bg-gradient-to-br from-purple-500/50 via-pink-500/50 to-purple-500/50">
                 <img
-                  src={aboutImage}
+                  src="/assets/about.jpg"
                   alt="About me"
                   className="rounded-xl w-full object-cover"
                 />
