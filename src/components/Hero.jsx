@@ -1,7 +1,8 @@
 import { HERO_CONTENT } from "../constants";
-import profilePicture from "/my-portfolio-react/my-portfolio-react/public/logo.jpg";
 import { motion } from "framer-motion";
 import { DownloadIcon } from "lucide-react";
+
+const profilePicture = "/logo.JPG";
 
 const Hero = () => {
   return (
