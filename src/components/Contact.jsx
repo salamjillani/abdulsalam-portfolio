@@ -76,7 +76,9 @@ const Contact = () => {
           >
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <MapPinIcon className="w-6 h-6 text-purple-400" />
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <MapPinIcon className="w-6 h-6 text-purple-400" />
+                </div>
                 <div>
                   <p className="text-neutral-300 font-medium">Address</p>
                   <p className="text-neutral-400">{CONTACT.address}</p>
@@ -84,7 +86,9 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <PhoneIcon className="w-6 h-6 text-purple-400" />
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <PhoneIcon className="w-6 h-6 text-purple-400" />
+                </div>
                 <div>
                   <p className="text-neutral-300 font-medium">Phone</p>
                   <p className="text-neutral-400">{CONTACT.phoneNo}</p>
@@ -92,12 +96,14 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <MailIcon className="w-6 h-6 text-purple-400" />
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <MailIcon className="w-6 h-6 text-purple-400" />
+                </div>
                 <div>
                   <p className="text-neutral-300 font-medium">Email</p>
                   <a
                     href={`mailto:${CONTACT.email}`}
-                    className="text-neutral-400 hover:text-purple-400 transition-colors"
+                    className="text-neutral-400 hover:text-purple-400 transition-colors text-sm"
                   >
                     {CONTACT.email}
                   </a>
@@ -119,7 +125,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Your Name"
                 value={name}
-                onChange={(e) => setName(e.target.value)} // Handle name input
+                onChange={(e) => setName(e.target.value)}
                 className="w-full px-4 py-3 bg-neutral-800 rounded-lg border border-neutral-700 focus:outline-none focus:border-purple-500 text-neutral-300"
               />
               <input
@@ -127,7 +133,7 @@ const Contact = () => {
                 type="email"
                 placeholder="Your Email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)} // Handle email input
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-4 py-3 bg-neutral-800 rounded-lg border border-neutral-700 focus:outline-none focus:border-purple-500 text-neutral-300"
               />
             </div>
@@ -135,7 +141,7 @@ const Contact = () => {
               name="message"
               placeholder="Your Message"
               value={message}
-              onChange={(e) => setMessage(e.target.value)} // Handle message input
+              onChange={(e) => setMessage(e.target.value)}
               rows={4}
               className="w-full px-4 py-3 bg-neutral-800 rounded-lg border border-neutral-700 focus:outline-none focus:border-purple-500 text-neutral-300"
             />
