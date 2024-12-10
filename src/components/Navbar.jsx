@@ -26,7 +26,7 @@ const Navbar = () => {
       Icon: FaPhone,
       href: `tel:${contactInfo.phone}`,
       color: "hover:text-green-500",
-      hoverTitle: "Call Me",
+      hoverTitle: "Phone Contact",
     },
     {
       Icon: FaEnvelope,
