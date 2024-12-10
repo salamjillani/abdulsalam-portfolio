@@ -1,7 +1,9 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
+import project6 from "../assets/projects/project-6.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React.js, as well as back-end technologies like Node.js, Express.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -9,68 +11,75 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "2023 - 2024",
+    role: "Front End Developer",
+    company: "CloudLink",
+    description: `Developed and delivered front-end websites for diverse clients. Embrace and integrate emerging industry trends into strategies. Streamlined website development processes, resulting in improved efficiency and faster project turnaround.`,
+    technologies: [
+      "React",
+      "Javascript",
+      "Tailwind",
+      "HTML",
+      "CSS",
+      "Figma",
+    ],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "2022 - 2022",
+    role: "Intern",
+    company: "National Freelance Training Program",
+    description: `Collaborated on various design projects, creating visually appealing graphics for digital platforms. Focused on brand consistency, delivering designs that enhanced user engagement and supported marketing initiatives.`,
+    technologies: ["Adobe Photoshop", "Adobe Illustrator", "Figma"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Object Detection-TensorFlow.js",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "An object detection app using React.js and TensorFlow.js, enabling image identification with object names and confidence levels.",
+    technologies: ["React.", "Tensorflow.js", "Tailwind"],
   },
   {
-    title: "Task Management App",
+    title: "Real-Time Video Chat App Using WebRTC",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Real-time video chat application leveraging WebRTC and Socket.io for seamless peer-to-peer communication. Features include room-based user connections, live audio-video streaming, and dynamic stream negotiation. Developed a peer-to-peer video chat system using WebRTC for real-time audio and video streaming. Implemented Socket.io for room-based user connections and created dynamic stream negotiation for seamless communication.",
+    technologies: ["React", "Express.js", "Socket.io", "WebRTC", "CSS"],
   },
   {
-    title: "Portfolio Website",
+    title: "Real-Time Chat App",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Real-time messaging platform that leverages Socket.io for instant bi-directional communication, enabling seamless chat functionality with features like user authentication, live updates, and chat rooms. Developed a real-time chat application using Socket.io for seamless communication. Implemented user authentication, live updates, and chat room functionality to ensure real-time message delivery and synchronization.",
+    technologies: ["React", "Express.js", "Socket.io", "Mongodb", "Tailwind"],
   },
   {
-    title: "Blogging Platform",
+    title: "Admin Dashboard",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Admin dashboard to manage user registrations, assign tasks, and track task statuses. Implemented efficient data handling and intuitive user interface for seamless administration. Created an admin dashboard for managing users and tasks, improving operational efficiency. Enabled task assignment, user registration, and task tracking features with an intuitive UI for a smooth administrative process.",
+    technologies: ["React", "MySQL", "PHP", "CSS"],
+  },
+  {
+    title: "Shopville",
+    image: project5,
+    description:
+      "eCommerce website offering a seamless shopping experience with features like product browsing, cart management, and user authentication. Developed an eCommerce platform with product browsing, cart management, and user authentication features. Implemented secure user authentication and seamless product browsing, integrating a cart management system for a smooth shopping experience.",
+    technologies: ["React", "MySQL", "Node.js", "Express.js"],
+  },
+  {
+    title: "BookShelf",
+    image: project6,
+    description:
+      "Web app for managing book collections, featuring user authentication, book CRUD operations, and search. Developed a web application to manage book collections with CRUD operations. Implemented a search function for efficient book browsing and enabled user authentication for personalized book management.",
+    technologies: ["MongoDB", "Express.js", "React", "Node.js"],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "Karachi",
+  phoneNo: "+923302488872",
+  email: "codesofsalam@gmail.com",
 };
