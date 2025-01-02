@@ -35,7 +35,7 @@ export const PROJECTS = [
     technologies: ["React", "Express.js", "Socket.io", "WebRTC", "CSS"],
   },
   {
-    title: "Real-Time Chat App",
+    title: "SalamChat-Real Time Chat App",
     image: "/assets/projects/project-3.PNG",  
     description:
       "Real-time messaging platform that leverages Socket.io for instant bi-directional communication, enabling seamless chat functionality with features like user authentication, live updates, and chat rooms. Developed a real-time chat application using Socket.io for seamless communication. Implemented user authentication, live updates, and chat room functionality to ensure real-time message delivery and synchronization.",

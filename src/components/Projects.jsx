@@ -5,7 +5,7 @@ import { PROJECTS } from "../constants";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen py-24 bg-gradient-to-b from-neutral-950 to-neutral-900 relative overflow-hidden">
+    <div className="min-h-screen py-24 bg-gradient-to-b  relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 -z-10">
         <motion.div
