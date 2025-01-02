@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="py-24 relative">
+    <div className="py-24 relative" id="contact">
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/3 left-1/4 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl" />
