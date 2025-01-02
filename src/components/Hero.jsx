@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="absolute bottom-1/3 left-1/4 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-2/3 space-y-6">
             <motion.div
