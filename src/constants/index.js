@@ -21,32 +21,32 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Object Detection-TensorFlow.js",
-    image: "/assets/projects/project-1.png",  
-    description:
-      "An object detection app using React.js and TensorFlow.js, enabling image identification with object names and confidence levels.",
-    technologies: ["React.", "Tensorflow.js", "Tailwind"],
-  },
-  {
-    title: "Real-Time Video Chat App Using WebRTC",
-    image: "/assets/projects/project-2.PNG",  
-    description:
-      "Real-time video chat application leveraging WebRTC and Socket.io for seamless peer-to-peer communication. Features include room-based user connections, live audio-video streaming, and dynamic stream negotiation. Developed a peer-to-peer video chat system using WebRTC for real-time audio and video streaming. Implemented Socket.io for room-based user connections and created dynamic stream negotiation for seamless communication.",
-    technologies: ["React", "Express.js", "Socket.io", "WebRTC", "CSS"],
-  },
-  {
     title: "SalamChat-Real Time Chat App",
-    image: "/assets/projects/project-3.PNG",  
+    image: "/assets/projects/project-3.PNG",
     description:
       "Real-time messaging platform that leverages Socket.io for instant bi-directional communication, enabling seamless chat functionality with features like user authentication, live updates, and chat rooms. Developed a real-time chat application using Socket.io for seamless communication. Implemented user authentication, live updates, and chat room functionality to ensure real-time message delivery and synchronization.",
     technologies: ["React", "Express.js", "Socket.io", "Mongodb", "Tailwind"],
+    github: "https://github.com/codesofsalam/salamchat-chatapp",
+    livedemo: "https://salamchat.vercel.app/",
   },
   {
-    title: "Admin Dashboard",
-    image: "/assets/projects/project-4.png", 
+    title: "Object Detection-TensorFlow.js",
+    image: "/assets/projects/project-1.png",
     description:
-      "Admin dashboard to manage user registrations, assign tasks, and track task statuses. Implemented efficient data handling and intuitive user interface for seamless administration. Created an admin dashboard for managing users and tasks, improving operational efficiency. Enabled task assignment, user registration, and task tracking features with an intuitive UI for a smooth administrative process.",
-    technologies: ["React", "MySQL", "PHP", "CSS"],
+      "An object detection app using React.js and TensorFlow.js, enabling image identification with object names and confidence levels.",
+    technologies: ["React.", "Tensorflow.js", "Tailwind"],
+    github: "https://github.com/codesofsalam/objectdetection-tensorflowjs",
+    livedemo: "",
+  },
+
+  {
+    title: "Real-Time Video Chat App Using WebRTC",
+    image: "/assets/projects/project-2.PNG",
+    description:
+      "Real-time video chat application leveraging WebRTC and Socket.io for seamless peer-to-peer communication. Features include room-based user connections, live audio-video streaming, and dynamic stream negotiation. Developed a peer-to-peer video chat system using WebRTC for real-time audio and video streaming. Implemented Socket.io for room-based user connections and created dynamic stream negotiation for seamless communication.",
+    technologies: ["React", "Express.js", "Socket.io", "WebRTC", "CSS"],
+    github: "https://github.com/codesofsalam/react-videochat-webrtc",
+    livedemo: "",
   },
   {
     title: "Shopville",
@@ -54,13 +54,27 @@ export const PROJECTS = [
     description:
       "eCommerce website offering a seamless shopping experience with features like product browsing, cart management, and user authentication. Developed an eCommerce platform with product browsing, cart management, and user authentication features. Implemented secure user authentication and seamless product browsing, integrating a cart management system for a smooth shopping experience.",
     technologies: ["React", "MySQL", "Node.js", "Express.js"],
+    github: "https://github.com/codesofsalam/shopville",
+    livedemo: "https://shopville.vercel.app/",
   },
   {
+    title: "Galaxium-Next Gen Staffing Platform",
+    image: "/assets/projects/project-4.png",
+    description:
+      "Web platform designed to optimize workforce management using AI and blockchain. It aims to address challenges like skill shortages and inefficient manual processes by providing real-time workforce matching, forecasting, and data-driven insights. The platform targets industries needing scalable, automated staffing solutions.",
+    technologies: ["React", "Tailwind"],
+    github: "https://github.com/codesofsalam/galaxium",
+    livedemo: "https://galaxium.vercel.app/",
+  },
+
+  {
     title: "BookShelf",
-    image: "/assets/projects/project-6.PNG", 
+    image: "/assets/projects/project-6.PNG",
     description:
       "Web app for managing book collections, featuring user authentication, book CRUD operations, and search. Developed a web application to manage book collections with CRUD operations. Implemented a search function for efficient book browsing and enabled user authentication for personalized book management.",
     technologies: ["MongoDB", "Express.js", "React", "Node.js"],
+    github: "https://github.com/codesofsalam/bookshelf",
+    livedemo: "",
   },
 ];
 

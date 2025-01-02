@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import { PROJECTS } from "../constants";
@@ -111,26 +110,30 @@ const Projects = () => {
 
                     {/* Action Buttons */}
                     <div className="flex items-center gap-6 pt-4">
-                      <motion.a
-                        whileHover={{ scale: 1.1 }}
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 rounded-lg transition-colors"
-                      >
-                        <Github className="w-5 h-5" />
-                        <span>View Code</span>
-                      </motion.a>
-                      <motion.a
-                        whileHover={{ scale: 1.1 }}
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-lg hover:opacity-90 transition-opacity"
-                      >
-                        <ExternalLink className="w-5 h-5" />
-                        <span>Live Demo</span>
-                      </motion.a>
+                      {project.github && (
+                        <motion.a
+                          whileHover={{ scale: 1.1 }}
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 rounded-lg transition-colors"
+                        >
+                          <Github className="w-5 h-5" />
+                          <span>View Code</span>
+                        </motion.a>
+                      )}
+                      {project.livedemo && (
+                        <motion.a
+                          whileHover={{ scale: 1.1 }}
+                          href={project.livedemo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-lg hover:opacity-90 transition-opacity"
+                        >
+                          <ExternalLink className="w-5 h-5" />
+                          <span>Live Demo</span>
+                        </motion.a>
+                      )}
                     </div>
                   </div>
                 </motion.div>
