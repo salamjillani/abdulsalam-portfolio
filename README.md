@@ -19,22 +19,18 @@ To set up and run the project locally, follow these steps:
    cd abdulsalam-portfolio
    ```
 
-2. **Install Vite:**
-   ```bash
-   npm create vite@latest
-   ```
 
-3. **Install dependencies:**
+2. **Install dependencies:**
    ```bash
    npm install
    ```
 
-4. **Start the development server:**
+3. **Start the development server:**
    ```bash
    npm run dev
    ```
 
-5. **Build for production:**
+4. **Build for production:**
    ```bash
    npm run build
    ```
