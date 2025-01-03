@@ -1,11 +1,10 @@
-import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { motion } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
 import { PROJECTS } from "../constants";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen py-24 bg-gradient-to-b  relative overflow-hidden">
-      {/* Animated background elements */}
+    <div className="min-h-screen py-24 bg-gradient-to-b relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <motion.div
           animate={{
@@ -15,7 +14,7 @@ const Projects = () => {
           transition={{
             duration: 8,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
           className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"
         />
@@ -27,14 +26,13 @@ const Projects = () => {
           transition={{
             duration: 8,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
           className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"
         />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -47,16 +45,16 @@ const Projects = () => {
           >
             Portfolio Showcase
           </motion.span>
-          <h2 className="text-4xl lg:text-6xl font-bold">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold">
             Featured
             <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-pink-600 bg-clip-text text-transparent">
-              {" "}Projects
+              {" "}
+              Projects
             </span>
           </h2>
         </motion.div>
 
-        {/* Projects Section */}
-        <div className="space-y-20">
+        <div className="space-y-16 sm:space-y-20">
           {PROJECTS.map((project, index) => (
             <motion.div
               key={index}
@@ -65,8 +63,7 @@ const Projects = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="group"
             >
-              <div className="flex flex-col lg:flex-row items-center gap-12">
-                {/* Project Image */}
+              <div className="flex flex-col lg:flex-row items-center lg:gap-12 gap-8">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
@@ -77,46 +74,43 @@ const Projects = () => {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-auto"
+                      className="w-full h-auto object-cover"
                     />
                   </div>
                 </motion.div>
 
-                {/* Project Details */}
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="w-full lg:w-1/2 p-8 bg-neutral-900/50 backdrop-blur-xl rounded-xl border border-neutral-800/50 shadow-xl"
+                  className="w-full lg:w-1/2 p-6 sm:p-8 bg-neutral-900/50 backdrop-blur-xl rounded-xl border border-neutral-800/50 shadow-xl"
                 >
-                  <div className="space-y-6">
-                    <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+                  <div className="space-y-4 sm:space-y-6">
+                    <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
                       {project.title}
                     </h3>
-                    <p className="text-lg text-neutral-300 leading-relaxed">
+                    <p className="text-base sm:text-lg text-neutral-300 leading-relaxed">
                       {project.description}
                     </p>
 
-                    {/* Technologies */}
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (
                         <motion.span
                           key={techIndex}
                           whileHover={{ scale: 1.1 }}
-                          className="px-4 py-2 text-sm font-medium bg-purple-500/10 text-purple-300 rounded-full hover:bg-purple-500/20 transition-colors"
+                          className="px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium bg-purple-500/10 text-purple-300 rounded-full hover:bg-purple-500/20 transition-colors"
                         >
                           {tech}
                         </motion.span>
                       ))}
                     </div>
 
-                    {/* Action Buttons */}
-                    <div className="flex items-center gap-6 pt-4">
+                    <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 pt-4">
                       {project.github && (
                         <motion.a
                           whileHover={{ scale: 1.1 }}
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 rounded-lg transition-colors"
+                          className="flex items-center gap-2 px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 rounded-lg transition-colors w-full sm:w-auto text-center"
                         >
                           <Github className="w-5 h-5" />
                           <span>View Code</span>
@@ -128,7 +122,7 @@ const Projects = () => {
                           href={project.livedemo}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-lg hover:opacity-90 transition-opacity"
+                          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-lg hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
                         >
                           <ExternalLink className="w-5 h-5" />
                           <span>Live Demo</span>

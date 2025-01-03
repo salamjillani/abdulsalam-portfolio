@@ -1,6 +1,5 @@
-
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaPhone, FaEnvelope } from "react-icons/fa";
+import { Github, Linkedin, MailIcon, PhoneIcon } from "lucide-react";
 
 const Navbar = () => {
   const contactInfo = {
@@ -12,28 +11,28 @@ const Navbar = () => {
 
   const socialLinks = [
     {
-      Icon: FaLinkedin,
+      Icon: Linkedin,
       href: contactInfo.linkedin,
       color: "hover:text-blue-500",
       hoverTitle: "LinkedIn Profile",
       bgColor: "group-hover:bg-blue-500/10",
     },
     {
-      Icon: FaGithub,
+      Icon: Github,
       href: contactInfo.github,
       color: "hover:text-neutral-100",
       hoverTitle: "GitHub Profile",
       bgColor: "group-hover:bg-neutral-100/10",
     },
     {
-      Icon: FaPhone,
+      Icon: PhoneIcon,
       href: `tel:${contactInfo.phone}`,
       color: "hover:text-green-500",
       hoverTitle: "Phone Contact",
       bgColor: "group-hover:bg-green-500/10",
     },
     {
-      Icon: FaEnvelope,
+      Icon: MailIcon,
       href: `mailto:${contactInfo.email}`,
       color: "hover:text-red-500",
       hoverTitle: "Send Email",
@@ -49,10 +48,9 @@ const Navbar = () => {
       className="py-4 px-6 fixed top-0 left-0 right-0 z-50"
     >
       <div className="absolute inset-0 bg-neutral-950/70 backdrop-blur-md border-b border-neutral-800/50" />
-      
+
       <div className="container mx-auto relative">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -64,37 +62,40 @@ const Navbar = () => {
             </span>
           </motion.div>
 
-          {/* Social Links */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex items-center gap-2 sm:gap-4"
           >
-            {socialLinks.map(({ Icon, href, color, hoverTitle, bgColor }, index) => (
-              <motion.div
-                key={index}
-                className="group relative"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span className={`absolute inset-0 rounded-lg ${bgColor} blur opacity-0 group-hover:opacity-100 transition-all duration-300`} />
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`
+            {socialLinks.map(
+              ({ Icon, href, color, hoverTitle, bgColor }, index) => (
+                <motion.div
+                  key={index}
+                  className="group relative"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <span
+                    className={`absolute inset-0 rounded-lg ${bgColor} blur opacity-0 group-hover:opacity-100 transition-all duration-300`}
+                  />
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`
                     relative flex items-center justify-center w-10 h-10 rounded-lg
                     text-neutral-400 transition-all duration-300
                     hover:shadow-lg group-hover:shadow-purple-500/20
                     ${color}
                   `}
-                  title={hoverTitle}
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              </motion.div>
-            ))}
+                    title={hoverTitle}
+                  >
+                    <Icon className="w-5 h-5" />
+                  </a>
+                </motion.div>
+              )
+            )}
           </motion.div>
         </div>
       </div>

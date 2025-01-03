@@ -21,7 +21,7 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "SalamChat-Real Time Chat App",
+    title: "SalamChat",
     image: "/assets/projects/project-3.PNG",
     description:
       "Real-time messaging platform that leverages Socket.io for instant bi-directional communication, enabling seamless chat functionality with features like user authentication, live updates, and chat rooms. Developed a real-time chat application using Socket.io for seamless communication. Implemented user authentication, live updates, and chat room functionality to ensure real-time message delivery and synchronization.",
@@ -49,7 +49,7 @@ export const PROJECTS = [
     livedemo: "",
   },
   {
-    title: "Shopville",
+    title: "ShopVille",
     image: "/assets/projects/project-5.png",
     description:
       "eCommerce website offering a seamless shopping experience with features like product browsing, cart management, and user authentication. Developed an eCommerce platform with product browsing, cart management, and user authentication features. Implemented secure user authentication and seamless product browsing, integrating a cart management system for a smooth shopping experience.",
@@ -74,6 +74,34 @@ export const PROJECTS = [
       "Web app for managing book collections, featuring user authentication, book CRUD operations, and search. Developed a web application to manage book collections with CRUD operations. Implemented a search function for efficient book browsing and enabled user authentication for personalized book management.",
     technologies: ["MongoDB", "Express.js", "React", "Node.js"],
     github: "https://github.com/codesofsalam/bookshelf",
+    livedemo: "",
+  },
+
+  {
+    title: "WeatherNow",
+    image: "/assets/projects/project-7.PNG",
+    description:
+      "A real-time weather app which provides up-to-date weather information using the OpenWeather API.",
+    technologies: ["React", "CSS"],
+    github: "https://github.com/codesofsalam/react-weather-app",
+    livedemo: "",
+  },
+  {
+    title: "TaskMaster",
+    image: "/assets/projects/project-8.PNG",
+    description:
+      "A To-Do list app built with React.js that stores tasks in local storage. It allows users to add, edit, mark as completed, and remove tasks, keeping them saved even after a page refresh.",
+    technologies: ["React", "CSS"],
+    github: "https://github.com/codesofsalam/todo-localstorage-react",
+    livedemo: "",
+  },
+  {
+    title: "QuickCalc",
+    image: "/assets/projects/project-9.PNG",
+    description:
+      "A simple calculator app built with React.js. It allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division with an intuitive interface.",
+    technologies: ["React", "CSS"],
+    github: "https://github.com/codesofsalam/calculator-react",
     livedemo: "",
   },
 ];
