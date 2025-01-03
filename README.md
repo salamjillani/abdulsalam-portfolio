@@ -9,6 +9,11 @@ This portfolio website is built using Vite, React, Tailwind CSS, and Framer Moti
 - **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
 - **Framer Motion**: A library for creating animations and gestures in React.
 
+### Prerequisites
+
+- Node.js
+- npm
+  
 ## Project Setup
 
 To set up and run the project locally, follow these steps:
