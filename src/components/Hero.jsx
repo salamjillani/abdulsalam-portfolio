@@ -1,4 +1,3 @@
-
 import { DownloadIcon } from "lucide-react";
 import { HERO_CONTENT } from "../constants";
 const profilePicture = "/logo.JPG";
@@ -6,7 +5,6 @@ const profilePicture = "/logo.JPG";
 const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center mt-16 lg:mt-0">
-      {/* Animated background gradient orbs */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-48 md:w-96 h-48 md:h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-48 md:w-96 h-48 md:h-96 bg-pink-500/20 rounded-full blur-3xl animate-pulse delay-700" />
@@ -15,10 +13,8 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 sm:px-6 py-8 md:py-0">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-          {/* Text Content Section */}
           <div className="w-full lg:w-3/5 space-y-6 md:space-y-8 text-center lg:text-left">
             <div className="space-y-3 md:space-y-4">
-              {/* Mobile-only stacked layout */}
               <div className="block lg:hidden space-y-2">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
                   Hi, I&apos;m
@@ -29,7 +25,6 @@ const Hero = () => {
                   </span>
                 </h1>
               </div>
-              {/* Desktop-only inline layout */}
               <h1 className="hidden lg:block text-6xl font-bold whitespace-nowrap">
                 Hi, I&apos;m{" "}
                 <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
@@ -59,22 +54,26 @@ const Hero = () => {
               
               <a
                 href="#contact"
-                className="flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-white font-medium 
-                border border-purple-500/30 hover:bg-purple-500/10 transition-all duration-300 ease-out"
+                className="group relative flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-xl 
+                text-white font-medium overflow-hidden bg-neutral-900 transition-all duration-300 ease-out
+                hover:text-purple-300"
               >
-                Let&apos;s Talk
+                <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-purple-600/20 via-pink-500/20 
+                to-purple-600/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+                <div className="absolute inset-0 w-0 bg-gradient-to-r from-purple-600/10 to-pink-500/10 
+                group-hover:w-full transition-all duration-300 ease-out" />
+                <div className="absolute -inset-px bg-gradient-to-r from-purple-600/50 via-pink-500/50 to-purple-600/50 
+                opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
+                <span className="relative">Let&apos;s Talk</span>
               </a>
             </div>
           </div>
 
-          {/* Profile Image Section */}
           <div className="w-full sm:w-4/5 md:w-3/4 lg:w-2/5 flex justify-center">
             <div className="relative group">
-              {/* Animated gradient border */}
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600 
                 rounded-full blur-lg opacity-70 group-hover:opacity-100 transition duration-300" />
               
-              {/* Rotating gradient ring */}
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600 
                 rounded-full animate-spin-slow opacity-70" />
               
