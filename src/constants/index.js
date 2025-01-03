@@ -41,7 +41,7 @@ export const PROJECTS = [
 
   {
     title: "Real-Time Video Chat App Using WebRTC",
-    image: "/assets/projects/project-2.PNG",
+    image: "/assets/projects/project-2.jpg",
     description:
       "Real-time video chat application leveraging WebRTC and Socket.io for seamless peer-to-peer communication. Features include room-based user connections, live audio-video streaming, and dynamic stream negotiation. Developed a peer-to-peer video chat system using WebRTC for real-time audio and video streaming. Implemented Socket.io for room-based user connections and created dynamic stream negotiation for seamless communication.",
     technologies: ["React", "Express.js", "Socket.io", "WebRTC", "CSS"],
