@@ -1,5 +1,4 @@
-```markdown
-# Abdulsalam's Portfolio
+# AbdulSalam's Portfolio
 
 This portfolio website is built using Vite, React, Tailwind CSS, and Framer Motion.
 
@@ -20,17 +19,22 @@ To set up and run the project locally, follow these steps:
    cd abdulsalam-portfolio
    ```
 
-2. **Install dependencies:**
+2. **Install Vite:**
+   ```bash
+   npm create vite@latest
+   ```
+
+3. **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. **Start the development server:**
+4. **Start the development server:**
    ```bash
    npm run dev
    ```
 
-4. **Build for production:**
+5. **Build for production:**
    ```bash
    npm run build
    ```
@@ -41,29 +45,14 @@ To set up and run the project locally, follow these steps:
 - **Smooth Animations**: Using Framer Motion for delightful animations and interactions.
 - **Modern Styling**: Tailwind CSS provides a modern and clean design.
 
-## Folder Structure
 
-- `src/`: Contains the source code of the project.
-  - `assets/`: Images, fonts, and other static assets.
-  - `components/`: Reusable React components.
-  - `pages/`: Different pages of the portfolio.
-  - `styles/`: Custom CSS and Tailwind configuration.
-  - `App.jsx`: Main application component.
-  - `index.jsx`: Entry point of the application.
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Contact
 
-For any inquiries, please contact me at [your-email@example.com].
+For any inquiries, please contact me at [codesofsalam@gmail.com].
 
 ---
 
 Feel free to contribute to this project by opening issues and submitting pull requests.
 
 Thank you for visiting my portfolio!
-```
-
-You can update the content above in your README file at [this link](https://github.com/codesofsalam/abdulsalam-portfolio/edit/main/README.md).
