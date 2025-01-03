@@ -53,16 +53,25 @@ export const PROJECTS = [
     image: "/assets/projects/project-5.png",
     description:
       "eCommerce website offering a seamless shopping experience with features like product browsing, cart management, and user authentication. Developed an eCommerce platform with product browsing, cart management, and user authentication features. Implemented secure user authentication and seamless product browsing, integrating a cart management system for a smooth shopping experience.",
-    technologies: ["React", "MySQL", "Node.js", "Express.js"],
+    technologies: ["React", "MySQL", "Node.js", "Express.js", "Tailwind", "Framer Motion"],
     github: "https://github.com/codesofsalam/shopville",
     livedemo: "https://shopville.vercel.app/",
+  },
+  {
+    title: "Saucy Spicy",
+    image: "/assets/projects/project-10.jpg",
+    description:
+      "Saucy Spicy is a vibrant and user-friendly food ordering app designed to provide a seamless experience for discovering, customizing, and ordering delicious meals. With intuitive navigation, real-time menu updates, Saucy Spicy brings your favorite flavors to your fingertips.",
+    technologies: ["React", "Framer Motion", "Tailwind"],
+    github: "https://github.com/codesofsalam/saucyspicy",
+    livedemo: "https://saucyspicy.vercel.app/",
   },
   {
     title: "Galaxium-Next Gen Staffing Platform",
     image: "/assets/projects/project-4.png",
     description:
       "Web platform designed to optimize workforce management using AI and blockchain. It aims to address challenges like skill shortages and inefficient manual processes by providing real-time workforce matching, forecasting, and data-driven insights. The platform targets industries needing scalable, automated staffing solutions.",
-    technologies: ["React", "Tailwind"],
+    technologies: ["React", "Tailwind", "Framer Motion"],
     github: "https://github.com/codesofsalam/galaxium",
     livedemo: "https://galaxium.vercel.app/",
   },
