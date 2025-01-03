@@ -84,7 +84,7 @@ export const PROJECTS = [
       "A real-time weather app which provides up-to-date weather information using the OpenWeather API.",
     technologies: ["React", "CSS"],
     github: "https://github.com/codesofsalam/react-weather-app",
-    livedemo: "",
+    livedemo: "https://weathernow-zeta.vercel.app/",
   },
   {
     title: "TaskMaster",
@@ -93,7 +93,7 @@ export const PROJECTS = [
       "A To-Do list app built with React.js that stores tasks in local storage. It allows users to add, edit, mark as completed, and remove tasks, keeping them saved even after a page refresh.",
     technologies: ["React", "CSS"],
     github: "https://github.com/codesofsalam/todo-localstorage-react",
-    livedemo: "",
+    livedemo: "https://taskmaster-kappa-ten.vercel.app/",
   },
   {
     title: "QuickCalc",
@@ -102,7 +102,7 @@ export const PROJECTS = [
       "A simple calculator app built with React.js. It allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division with an intuitive interface.",
     technologies: ["React", "CSS"],
     github: "https://github.com/codesofsalam/calculator-react",
-    livedemo: "",
+    livedemo: "https://quickcalc-orcin.vercel.app/",
   },
 ];
 

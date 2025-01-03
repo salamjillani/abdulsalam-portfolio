@@ -70,6 +70,7 @@ const Projects = () => {
                   className="w-full lg:w-1/2"
                 >
                   <div className="relative rounded-xl overflow-hidden shadow-2xl">
+                    {/* Remove blur effect on the content area */}
                     <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <img
                       src={project.image}
@@ -81,7 +82,7 @@ const Projects = () => {
 
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="w-full lg:w-1/2 p-6 sm:p-8 bg-neutral-900/50 backdrop-blur-xl rounded-xl border border-neutral-800/50 shadow-xl"
+                  className="w-full lg:w-1/2 p-6 sm:p-8 bg-neutral-900/50 backdrop-blur-none rounded-xl border border-neutral-800/50 shadow-xl"
                 >
                   <div className="space-y-4 sm:space-y-6">
                     <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
