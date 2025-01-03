@@ -40,7 +40,7 @@ export const PROJECTS = [
   },
 
   {
-    title: "Real-Time Video Chat App Using WebRTC",
+    title: "PeerConnect",
     image: "/assets/projects/project-2.jpg",
     description:
       "Real time peer-to-peer video chat application using WebRTC for real-time audio-video streaming and Socket.io for room-based connections and dynamic stream negotiation.",
