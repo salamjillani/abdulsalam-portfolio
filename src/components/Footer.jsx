@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-12 relative bg-gradient-to-b from-neutral-900 to-black">
+    <footer className="py-12 relative">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,6 @@ const Footer = () => {
             ))}
           </div>
 
-          {/* Divider with gradient */}
           <div className="relative">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-neutral-800"></div>
@@ -74,8 +73,8 @@ const Footer = () => {
 
 
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -left-1/4 -top-1/4 w-1/2 h-1/2 bg-pink-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute -right-1/4 -bottom-1/4 w-1/2 h-1/2 bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute -left-1/4 -top-1/4 w-1/2 h-1/2 rounded-full blur-3xl"></div>
+        <div className="absolute -right-1/4 -bottom-1/4 w-1/2 h-1/2  rounded-full blur-3xl"></div>
       </div>
     </footer>
   );

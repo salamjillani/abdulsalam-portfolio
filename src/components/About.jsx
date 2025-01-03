@@ -65,7 +65,7 @@ const About = () => {
               >
                 <div className="text-center">
                   <span className="block text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-                    2+
+                    1+
                   </span>
                   <span className="text-sm text-neutral-300">
                     Years Experience

@@ -77,7 +77,7 @@ const Technologies = () => {
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold flex flex-wrap justify-center">
             <span className="mr-3">Technologies</span>
-            <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="mt-1 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
               I Work With
             </span>
           </h2>
