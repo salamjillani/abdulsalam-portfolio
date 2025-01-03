@@ -6,13 +6,17 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Github, href: "https://github.com/codesofsalam", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/abdulsalamshah", label: "LinkedIn" },
+    {
+      icon: Linkedin,
+      href: "https://linkedin.com/in/abdulsalamshah",
+      label: "LinkedIn",
+    },
     { icon: MailIcon, href: "mailto:codesofsalam@gmail.com", label: "Email" },
-    { icon: PhoneIcon, href: "tel:+923302488872", label: "Phone" }, 
+    { icon: PhoneIcon, href: "tel:+923302488872", label: "Phone" },
   ];
 
   return (
-    <footer className="py-12 relative">
+    <footer className="font-mono py-12 relative">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,7 +24,6 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
           className="grid gap-8"
         >
-        
           <div className="flex justify-center gap-6">
             {socialLinks.map((social) => (
               <motion.a
@@ -53,7 +56,6 @@ const Footer = () => {
             </div>
           </div>
 
-   
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -70,7 +72,6 @@ const Footer = () => {
           </motion.div>
         </motion.div>
       </div>
-
 
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -left-1/4 -top-1/4 w-1/2 h-1/2 rounded-full blur-3xl"></div>

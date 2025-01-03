@@ -8,7 +8,7 @@ const About = () => {
   ];
 
   return (
-    <div className="py-24 relative" id="about">
+    <div className="font-mono py-24 relative" id="about">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-pulse delay-300" />

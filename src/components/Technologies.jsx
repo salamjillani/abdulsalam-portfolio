@@ -58,7 +58,7 @@ const Technologies = () => {
   });
 
   return (
-    <div className="relative py-16 sm:py-24 border-b border-neutral-800">
+    <div className="font-mono relative py-16 sm:py-24 border-b border-neutral-800">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-1/4 right-1/4 w-52 h-52 sm:w-72 sm:h-72 bg-purple-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 left-1/4 w-52 h-52 sm:w-72 sm:h-72 bg-blue-500/10 rounded-full blur-3xl" />
@@ -76,8 +76,8 @@ const Technologies = () => {
             Stack & Tools
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold flex flex-wrap justify-center">
-            <span className="mr-3">Technologies</span>
-            <span className="mt-1 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="mr-5">Technologies</span>
+            <span className=" bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
               I Work With
             </span>
           </h2>

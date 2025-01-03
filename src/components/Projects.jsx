@@ -4,7 +4,7 @@ import { PROJECTS } from "../constants";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen py-24 bg-gradient-to-b relative overflow-hidden">
+    <div className="font-mono min-h-screen py-24 bg-gradient-to-b relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <motion.div
           animate={{
@@ -70,7 +70,6 @@ const Projects = () => {
                   className="w-full lg:w-1/2"
                 >
                   <div className="relative rounded-xl overflow-hidden shadow-2xl">
-                    {/* Remove blur effect on the content area */}
                     <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <img
                       src={project.image}

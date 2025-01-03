@@ -49,7 +49,7 @@ const Navbar = () => {
     >
       <div className="absolute inset-0 bg-neutral-950/70 backdrop-blur-md border-b border-neutral-800/50" />
 
-      <div className="container mx-auto relative">
+      <div className=" font-mono container mx-auto relative">
         <div className="flex items-center justify-between">
           <motion.div
             initial={{ opacity: 0, x: -50 }}

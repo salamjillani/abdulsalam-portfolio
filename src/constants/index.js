@@ -24,7 +24,7 @@ export const PROJECTS = [
     title: "SalamChat",
     image: "/assets/projects/project-3.PNG",
     description:
-      "Real-time messaging platform that leverages Socket.io for instant bi-directional communication, enabling seamless chat functionality with features like user authentication, live updates, and chat rooms. Developed a real-time chat application using Socket.io for seamless communication. Implemented user authentication, live updates, and chat room functionality to ensure real-time message delivery and synchronization.",
+      "Real-time chat application using Socket.io for seamless communication. Implemented user authentication, live updates, and chat room functionality to ensure real-time message delivery and synchronization.",
     technologies: ["React", "Express.js", "Socket.io", "Mongodb", "Tailwind"],
     github: "https://github.com/codesofsalam/salamchat-chatapp",
     livedemo: "https://salamchat.vercel.app/",
@@ -43,7 +43,7 @@ export const PROJECTS = [
     title: "Real-Time Video Chat App Using WebRTC",
     image: "/assets/projects/project-2.jpg",
     description:
-      "Real-time video chat application leveraging WebRTC and Socket.io for seamless peer-to-peer communication. Features include room-based user connections, live audio-video streaming, and dynamic stream negotiation. Developed a peer-to-peer video chat system using WebRTC for real-time audio and video streaming. Implemented Socket.io for room-based user connections and created dynamic stream negotiation for seamless communication.",
+      "Real time peer-to-peer video chat application using WebRTC for real-time audio-video streaming and Socket.io for room-based connections and dynamic stream negotiation.",
     technologies: ["React", "Express.js", "Socket.io", "WebRTC", "CSS"],
     github: "https://github.com/codesofsalam/react-videochat-webrtc",
     livedemo: "",
@@ -52,16 +52,23 @@ export const PROJECTS = [
     title: "ShopVille",
     image: "/assets/projects/project-5.png",
     description:
-      "eCommerce website offering a seamless shopping experience with features like product browsing, cart management, and user authentication. Developed an eCommerce platform with product browsing, cart management, and user authentication features. Implemented secure user authentication and seamless product browsing, integrating a cart management system for a smooth shopping experience.",
-    technologies: ["React", "MySQL", "Node.js", "Express.js", "Tailwind", "Framer Motion"],
+      "An eCommerce platform with product browsing and cart management for a seamless shopping experience.",
+    technologies: [
+      "React",
+      "MongoDB",
+      "Node.js",
+      "Express.js",
+      "Tailwind",
+      "Framer Motion",
+    ],
     github: "https://github.com/codesofsalam/shopville",
     livedemo: "https://shopville.vercel.app/",
   },
   {
     title: "Saucy Spicy",
-    image: "/assets/projects/project-10.jpg",
+    image: "/assets/projects/project-10.PNG",
     description:
-      "Saucy Spicy is a vibrant and user-friendly food ordering app designed to provide a seamless experience for discovering, customizing, and ordering delicious meals. With intuitive navigation, real-time menu updates, Saucy Spicy brings your favorite flavors to your fingertips.",
+      "Saucy Spicy is a vibrant and user-friendly food ordering app designed to provide a seamless experience for discovering delicious meals. With intuitive navigation, menu updates. Saucy Spicy brings your favorite flavors to your fingertips.",
     technologies: ["React", "Framer Motion", "Tailwind"],
     github: "https://github.com/codesofsalam/saucyspicy",
     livedemo: "https://saucyspicy.vercel.app/",
