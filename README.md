@@ -1,8 +1,71 @@
-# React + Vite
+Your repository already has a README file. To create a new README file for your portfolio website using Vite, React, Tailwind, and Framer Motion, you can replace the existing content with the following:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```markdown
+# Abdulsalam's Portfolio
 
-Currently, two official plugins are available:
+This portfolio website is built using Vite, React, Tailwind CSS, and Framer Motion.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+
+- **Vite**: A fast build tool and development server for modern web projects.
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+- **Framer Motion**: A library for creating animations and gestures in React.
+
+## Project Setup
+
+To set up and run the project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/codesofsalam/abdulsalam-portfolio.git
+   cd abdulsalam-portfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## Features
+
+- **Responsive Design**: The site is fully responsive and works on all device sizes.
+- **Smooth Animations**: Using Framer Motion for delightful animations and interactions.
+- **Modern Styling**: Tailwind CSS provides a modern and clean design.
+
+## Folder Structure
+
+- `src/`: Contains the source code of the project.
+  - `assets/`: Images, fonts, and other static assets.
+  - `components/`: Reusable React components.
+  - `pages/`: Different pages of the portfolio.
+  - `styles/`: Custom CSS and Tailwind configuration.
+  - `App.jsx`: Main application component.
+  - `index.jsx`: Entry point of the application.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For any inquiries, please contact me at [your-email@example.com].
+
+---
+
+Feel free to contribute to this project by opening issues and submitting pull requests.
+
+Thank you for visiting my portfolio!
+```
+
+You can update the content above in your README file at [this link](https://github.com/codesofsalam/abdulsalam-portfolio/edit/main/README.md).
