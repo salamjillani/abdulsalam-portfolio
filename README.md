@@ -1,5 +1,3 @@
-Your repository already has a README file. To create a new README file for your portfolio website using Vite, React, Tailwind, and Framer Motion, you can replace the existing content with the following:
-
 ```markdown
 # Abdulsalam's Portfolio
 
