@@ -58,10 +58,10 @@ const Technologies = () => {
   });
 
   return (
-    <div className="font-mono relative py-16 sm:py-24 border-b border-neutral-800">
+    <div className="font-mono relative py-16 sm:py-24 border-b border-neutral-200 dark:border-neutral-800">
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-52 h-52 sm:w-72 sm:h-72 bg-purple-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 left-1/4 w-52 h-52 sm:w-72 sm:h-72 bg-blue-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-1/4 w-52 h-52 sm:w-72 sm:h-72 bg-purple-500/5 dark:bg-purple-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 left-1/4 w-52 h-52 sm:w-72 sm:h-72 bg-blue-500/5 dark:bg-blue-500/10 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,12 +72,12 @@ const Technologies = () => {
           transition={{ duration: 0.6 }}
           className="mb-12 sm:mb-20 text-center space-y-4"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-purple-500/10 text-sm font-medium text-purple-400 tracking-wider uppercase">
+          <span className="inline-block px-4 py-2 rounded-full bg-purple-500/5 dark:bg-purple-500/10 text-sm font-medium text-purple-600 dark:text-purple-400 tracking-wider uppercase">
             Stack & Tools
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold flex flex-wrap justify-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold flex flex-wrap justify-center text-neutral-900 dark:text-neutral-100">
             <span className="mr-5">Technologies</span>
-            <span className=" bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
               I Work With
             </span>
           </h2>
@@ -100,8 +100,12 @@ const Technologies = () => {
               className="group relative flex flex-col items-center"
             >
               <div
-                className="relative p-4 sm:p-6 rounded-xl bg-neutral-900/50 border border-neutral-800 
-                backdrop-blur-sm hover:border-neutral-700 transition-all duration-300
+                className="relative p-4 sm:p-6 rounded-xl 
+                bg-white/50 dark:bg-neutral-900/50 
+                border border-neutral-200 dark:border-neutral-800 
+                backdrop-blur-sm 
+                hover:border-neutral-300 dark:hover:border-neutral-700 
+                transition-all duration-300
                 hover:shadow-lg hover:shadow-purple-500/10"
               >
                 {tech.type === "image" ? (
@@ -120,7 +124,13 @@ const Technologies = () => {
                   className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full 
                   opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                 >
-                  <div className="px-2 py-1 sm:px-3 sm:py-1 text-xs sm:text-sm text-white bg-neutral-900 rounded-md shadow-lg whitespace-nowrap">
+                  <div
+                    className="px-2 py-1 sm:px-3 sm:py-1 text-xs sm:text-sm 
+                    text-neutral-700 dark:text-white 
+                    bg-white dark:bg-neutral-900 
+                    border border-neutral-200 dark:border-neutral-800
+                    rounded-md shadow-lg whitespace-nowrap"
+                  >
                     {tech.label}
                   </div>
                 </div>

@@ -33,7 +33,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="text-neutral-400 hover:text-white transition-colors"
+                className="text-neutral-600 dark:text-neutral-400 hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
                 aria-label={social.label}
               >
                 <social.icon className="w-6 h-6" />
@@ -43,15 +43,15 @@ const Footer = () => {
 
           <div className="relative">
             <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-neutral-800"></div>
+              <div className="w-full border-t border-neutral-200 dark:border-neutral-800"></div>
             </div>
             <div className="relative flex justify-center">
               <motion.div
                 whileHover={{ scale: 1.2, rotate: 360 }}
                 transition={{ duration: 0.5 }}
-                className="bg-neutral-900 px-3 py-1"
+                className="bg-white dark:bg-neutral-900 px-3 py-1"
               >
-                <Heart className="w-6 h-6 text-pink-500" />
+                <Heart className="w-6 h-6 text-pink-500 dark:text-pink-400" />
               </motion.div>
             </div>
           </div>
@@ -62,7 +62,7 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-center"
           >
-            <p className="text-sm md:text-base text-neutral-400">
+            <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400">
               <span className="font-medium">© {currentYear} Abdul Salam.</span>
               <br className="sm:hidden" />
               <span className="inline-block sm:ml-2">
@@ -74,8 +74,8 @@ const Footer = () => {
       </div>
 
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -left-1/4 -top-1/4 w-1/2 h-1/2 rounded-full blur-3xl"></div>
-        <div className="absolute -right-1/4 -bottom-1/4 w-1/2 h-1/2  rounded-full blur-3xl"></div>
+        <div className="absolute -left-1/4 -top-1/4 w-1/2 h-1/2 bg-purple-500/10 dark:bg-purple-400/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute -right-1/4 -bottom-1/4 w-1/2 h-1/2 bg-pink-500/10 dark:bg-pink-400/10 rounded-full blur-3xl animate-pulse delay-300" />
       </div>
     </footer>
   );
