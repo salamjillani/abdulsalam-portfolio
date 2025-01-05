@@ -1,6 +1,6 @@
 import { DownloadIcon } from "lucide-react";
 import { HERO_CONTENT } from "../constants";
-const profilePicture = "/logo.JPG";
+const profilePicture = "/pic.png";
 
 const Hero = () => {
   return (
