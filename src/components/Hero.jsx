@@ -58,22 +58,20 @@ const Hero = () => {
               <a
                 href="#contact"
                 className="group relative flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-xl 
-                text-neutral-900 dark:text-white font-medium overflow-hidden 
-                bg-neutral-100 dark:bg-neutral-900 transition-all duration-300 ease-out
-                hover:text-purple-500 dark:hover:text-purple-400"
+                    text-neutral-900 dark:text-white font-medium overflow-hidden
+                    bg-neutral-100 dark:bg-neutral-900 border border-neutral-800 dark:border-neutral-800 
+                    transition-all duration-300 ease-out
+                    hover:text-purple-500 dark:hover:text-purple-400"
               >
                 <div
                   className="absolute inset-0 w-full h-full bg-gradient-to-r 
-                  transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                      transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"
                 />
                 <div
                   className="absolute inset-0 w-0 bg-gradient-to-r 
-                  group-hover:w-full transition-all duration-300 ease-out"
+                      group-hover:w-full transition-all duration-300 ease-out"
                 />
-                <div
-                  className="absolute -inset-px 
-                   rounded-xl"
-                />
+                <div className="absolute -inset-px rounded-xl" />
                 <span className="relative">Let&apos;s Talk</span>
               </a>
             </div>
