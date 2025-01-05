@@ -22,9 +22,9 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "SalamChat",
-    image: "/assets/projects/project-3.PNG",
+    image: "/assets/projects/project-3.jpg",
     description:
-      "Real-time chat application using Socket.io for seamless communication. Implemented user authentication, live updates, and chat room functionality to ensure real-time message delivery and synchronization.",
+      "Real-time chat application using Socket.io for seamless communication between users. The application includes user authentication, ensuring secure access, and features such as live updates and chat room functionality for real-time message delivery and synchronization. It provides a smooth and interactive user experience, demonstrating expertise in real-time data handling",
     technologies: ["React", "Express.js", "Socket.io", "Mongodb", "Tailwind"],
     github: "https://github.com/codesofsalam/salamchat-chatapp",
     livedemo: "https://salamchat.vercel.app/",
@@ -43,16 +43,16 @@ export const PROJECTS = [
     title: "PeerConnect",
     image: "/assets/projects/project-2.jpg",
     description:
-      "Real time peer-to-peer video chat application using WebRTC for real-time audio-video streaming and Socket.io for room-based connections and dynamic stream negotiation.",
+      "Real-time peer-to-peer video chat application using WebRTC for high-quality audio and video streaming. Leveraged Socket.io for room-based connections and dynamic stream negotiation. Features include secure room creation, live video/audio streaming, and adaptive stream quality, ensuring a seamless and user-friendly communication experience.",
     technologies: ["React", "Express.js", "Socket.io", "WebRTC", "CSS"],
     github: "https://github.com/codesofsalam/react-videochat-webrtc",
     livedemo: "",
   },
   {
     title: "ShopVille",
-    image: "/assets/projects/project-5.png",
+    image: "/assets/projects/project-5.jpg",
     description:
-      "An eCommerce platform with product browsing and cart management for a seamless shopping experience.",
+      "An eCommerce platform with a clean and user-friendly UI/UX for seamless product browsing and shopping. Includes advanced search, filtering options, and dynamic product displays with detailed descriptions and images. The cart management system supports easy updates and real-time price calculations, ensuring a smooth user experience across all devices.",
     technologies: [
       "React",
       "MongoDB",
@@ -66,16 +66,16 @@ export const PROJECTS = [
   },
   {
     title: "Saucy Spicy",
-    image: "/assets/projects/project-10.PNG",
+    image: "/assets/projects/project-10.jpg",
     description:
-      "Saucy Spicy is a vibrant and user-friendly food ordering app designed to provide a seamless experience for discovering delicious meals. With intuitive navigation, menu updates. Saucy Spicy brings your favorite flavors to your fingertips.",
+      "Saucy Spicy is a vibrant and user-friendly food ordering app designed to make discovering and enjoying meals effortless. With intuitive navigation, menu updates, and detailed meal descriptions, it ensures a smooth and engaging ordering experience. The app brings your favorite flavors right to your fingertips, making every meal an easy and enjoyable choice.",
     technologies: ["React", "Framer Motion", "Tailwind"],
     github: "https://github.com/codesofsalam/saucyspicy",
     livedemo: "https://saucyspicy.vercel.app/",
   },
   {
     title: "Galaxium-Next Gen Staffing Platform",
-    image: "/assets/projects/project-4.png",
+    image: "/assets/projects/project-4.jpg",
     description:
       "Web platform designed to optimize workforce management using AI and blockchain. It aims to address challenges like skill shortages and inefficient manual processes by providing real-time workforce matching, forecasting, and data-driven insights. The platform targets industries needing scalable, automated staffing solutions.",
     technologies: ["React", "Tailwind", "Framer Motion"],
@@ -87,7 +87,7 @@ export const PROJECTS = [
     title: "BookShelf",
     image: "/assets/projects/project-6.PNG",
     description:
-      "Web app for managing book collections, featuring user authentication, book CRUD operations, and search. Developed a web application to manage book collections with CRUD operations. Implemented a search function for efficient book browsing and enabled user authentication for personalized book management.",
+      "Web app for managing book collections, featuring user authentication, book CRUD operations, and search.",
     technologies: ["MongoDB", "Express.js", "React", "Node.js"],
     github: "https://github.com/codesofsalam/bookshelf",
     livedemo: "",
@@ -97,7 +97,7 @@ export const PROJECTS = [
     title: "WeatherNow",
     image: "/assets/projects/project-7.PNG",
     description:
-      "A real-time weather app which provides up-to-date weather information using the OpenWeather API.",
+      "Real-time weather app which provides up-to-date weather information using the OpenWeather API.",
     technologies: ["React", "CSS"],
     github: "https://github.com/codesofsalam/react-weather-app",
     livedemo: "https://weathernow-zeta.vercel.app/",
@@ -106,7 +106,7 @@ export const PROJECTS = [
     title: "TaskMaster",
     image: "/assets/projects/project-8.PNG",
     description:
-      "A To-Do list app built with React.js that stores tasks in local storage. It allows users to add, edit, mark as completed, and remove tasks, keeping them saved even after a page refresh.",
+      "A To-Do list app built with React.js that stores tasks in local storage. It allows users to add, edit, and remove tasks, keeping them saved even after a page refresh.",
     technologies: ["React", "CSS"],
     github: "https://github.com/codesofsalam/todo-localstorage-react",
     livedemo: "https://taskmaster-kappa-ten.vercel.app/",
@@ -115,7 +115,7 @@ export const PROJECTS = [
     title: "QuickCalc",
     image: "/assets/projects/project-9.PNG",
     description:
-      "A simple calculator app built with React.js. It allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division with an intuitive interface.",
+      "A simple calculator app built with React.js. It allows users to perform basic arithmetic operations with an intuitive interface.",
     technologies: ["React", "CSS"],
     github: "https://github.com/codesofsalam/calculator-react",
     livedemo: "https://quickcalc-orcin.vercel.app/",
