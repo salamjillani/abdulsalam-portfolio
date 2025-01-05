@@ -113,7 +113,7 @@ const Contact = () => {
                   Contact Information
                 </h3>
 
-                <div className="space-y-3 md:space-y-4">
+                <div className="space-y-3 md:space-y-7">
                   <motion.div
                     whileHover={{ scale: 1.02 }}
                     className="flex items-center gap-3 md:gap-4 p-3 bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg"

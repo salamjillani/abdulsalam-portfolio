@@ -63,25 +63,25 @@ const Projects = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="group"
             >
-              <div className="flex flex-col lg:flex-row items-center lg:gap-12 gap-8">
+              <div className="flex flex-col lg:flex-row items-stretch lg:gap-12 gap-8">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
-                  className="w-full lg:w-1/2"
+                  className="w-full lg:w-1/2 flex items-center"
                 >
-                  <div className="relative rounded-xl overflow-hidden shadow-2xl">
+                  <div className="relative rounded-xl overflow-hidden shadow-2xl w-full">
                     <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-pink-500/20 dark:from-purple-400/20 dark:to-pink-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-auto object-cover"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </motion.div>
 
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="w-full lg:w-1/2 p-6 sm:p-8 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl rounded-xl border border-neutral-200/50 dark:border-neutral-800/50 shadow-xl shadow-purple-500/5 dark:shadow-purple-400/5"
+                  className="w-full lg:w-1/2 p-6 sm:p-8 bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200/50 dark:border-neutral-800/50 shadow-xl shadow-purple-500/5 dark:shadow-purple-400/5 flex flex-col justify-between"
                 >
                   <div className="space-y-4 sm:space-y-6">
                     <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
@@ -102,33 +102,33 @@ const Projects = () => {
                         </motion.span>
                       ))}
                     </div>
+                  </div>
 
-                    <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 pt-4">
-                      {project.github && (
-                        <motion.a
-                          whileHover={{ scale: 1.1 }}
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-4 py-2 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 text-neutral-800 dark:text-neutral-200 rounded-lg transition-colors w-full sm:w-auto text-center"
-                        >
-                          <Github className="w-5 h-5" />
-                          <span>View Code</span>
-                        </motion.a>
-                      )}
-                      {project.livedemo && (
-                        <motion.a
-                          whileHover={{ scale: 1.1 }}
-                          href={project.livedemo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-600 dark:from-purple-400 dark:to-pink-500 text-white rounded-lg hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
-                        >
-                          <ExternalLink className="w-5 h-5" />
-                          <span>Live Demo</span>
-                        </motion.a>
-                      )}
-                    </div>
+                  <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 pt-4">
+                    {project.github && (
+                      <motion.a
+                        whileHover={{ scale: 1.1 }}
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 text-neutral-800 dark:text-neutral-200 rounded-lg transition-colors w-full sm:w-auto text-center"
+                      >
+                        <Github className="w-5 h-5" />
+                        <span>View Code</span>
+                      </motion.a>
+                    )}
+                    {project.livedemo && (
+                      <motion.a
+                        whileHover={{ scale: 1.1 }}
+                        href={project.livedemo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-600 dark:from-purple-400 dark:to-pink-500 text-white rounded-lg hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
+                      >
+                        <ExternalLink className="w-5 h-5" />
+                        <span>Live Demo</span>
+                      </motion.a>
+                    )}
                   </div>
                 </motion.div>
               </div>

@@ -71,7 +71,7 @@ const Experience = () => {
                   whileHover={{ scale: 1.05 }}
                   className="lg:w-5/12 flex items-center justify-center"
                 >
-                  <div className="px-6 py-4 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl rounded-2xl border border-neutral-200/50 dark:border-neutral-800/50 flex items-center gap-3 shadow-lg shadow-purple-500/5 dark:shadow-purple-400/5">
+                  <div className="px-6 py-4 bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200/50 dark:border-neutral-800/50 flex items-center gap-3 shadow-lg shadow-purple-500/5 dark:shadow-purple-400/5">
                     <div className="p-2 bg-purple-500/10 dark:bg-purple-400/10 rounded-lg">
                       <BriefcaseIcon className="w-5 h-5 text-purple-500 dark:text-purple-400" />
                     </div>
@@ -83,7 +83,7 @@ const Experience = () => {
 
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="lg:w-5/12 p-6 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl rounded-2xl border border-neutral-200/50 dark:border-neutral-800/50 shadow-lg shadow-purple-500/5 dark:shadow-purple-400/5"
+                  className="lg:w-5/12 p-6 bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200/50 dark:border-neutral-800/50 shadow-lg shadow-purple-500/5 dark:shadow-purple-400/5"
                 >
                   <div className="space-y-4">
                     <div className="flex justify-between items-start">
