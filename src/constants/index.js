@@ -8,7 +8,7 @@ export const EXPERIENCES = [
     role: "Front End Developer",
     company: "CloudLink",
     description: `Developed and delivered front-end websites for diverse clients. Embrace and integrate emerging industry trends into strategies. Streamlined website development processes, resulting in improved efficiency and faster project turnaround.`,
-    technologies: ["React", "Javascript", "HTML", "CSS", "Figma"],
+    technologies: ["React", "JavaScript", "HTML", "CSS", "Figma"],
   },
   {
     year: "2022 - 2022",
@@ -25,7 +25,7 @@ export const PROJECTS = [
     image: "/assets/projects/project-3.jpg",
     description:
       "Real-time chat application using Socket.io for seamless communication between users. The application includes user authentication, ensuring secure access, and features such as live updates and chat room functionality for real-time message delivery and synchronization. It provides a smooth and interactive user experience, demonstrating expertise in real-time data handling",
-    technologies: ["React", "Express.js", "Socket.io", "Mongodb", "Tailwind"],
+    technologies: ["React", "Express.js", "Socket.io", "MongoDB", "Tailwind"],
     github: "https://github.com/codesofsalam/salamchat-chatapp",
     livedemo: "https://salamchat.vercel.app/",
   },
@@ -34,7 +34,7 @@ export const PROJECTS = [
     image: "/assets/projects/project-1.png",
     description:
       "An object detection app using React.js and TensorFlow.js, enabling image identification with object names and confidence levels.",
-    technologies: ["React.", "Tensorflow.js", "Tailwind"],
+    technologies: ["React", "Tensorflow.js", "Tailwind"],
     github: "https://github.com/codesofsalam/objectdetection-tensorflowjs",
     livedemo: "",
   },

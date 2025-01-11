@@ -1,6 +1,61 @@
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { PROJECTS } from "../constants";
+import { FaReact, FaNodeJs, FaCss3Alt, FaDatabase } from "react-icons/fa";
+import {
+  SiExpress,
+  SiSocketdotio,
+  SiMongodb,
+  SiTailwindcss,
+  SiTensorflow,
+  SiFramer,
+  SiWebrtc,
+} from "react-icons/si";
+
+const TechIcon = ({ tech }) => {
+  const iconProps = { className: "w-8 h-8" };
+
+  const techMap = {
+    React: <FaReact {...iconProps} className="w-6 h-6 text-[#61DAFB]" />,
+    "Express.js": (
+      <SiExpress {...iconProps} className="w-6 h-6 text-gray-600" />
+    ),
+    "Socket.io": (
+      <SiSocketdotio
+        {...iconProps}
+        className="w-6 h-6 text-black dark:text-white"
+      />
+    ),
+    MongoDB: <SiMongodb {...iconProps} className="w-6 h-6 text-green-500" />,
+    Tailwind: (
+      <SiTailwindcss {...iconProps} className="w-6 h-6 text-cyan-500" />
+    ),
+    "Tensorflow.js": (
+      <SiTensorflow {...iconProps} className="w-6 h-6 text-orange-500" />
+    ),
+    WebRTC: <SiWebrtc {...iconProps} className="w-6 h-6 text-gray-600" />,
+    "Node.js": <FaNodeJs {...iconProps} className="w-6 h-6 text-green-600" />,
+    CSS: <FaCss3Alt {...iconProps} className="w-6 h-6 text-blue-500" />,
+    "Framer Motion": (
+      <SiFramer {...iconProps} className="w-6 h-6 text-purple-500" />
+    ),
+  };
+
+  return (
+    <motion.div whileHover={{ scale: 1.1 }} className="relative">
+      <div className="p-3 bg-white dark:bg-neutral-800 rounded-lg shadow-sm">
+        {techMap[tech] || (
+          <FaDatabase {...iconProps} className="text-gray-500" />
+        )}
+      </div>
+    </motion.div>
+  );
+};
+
+TechIcon.propTypes = {
+  tech: PropTypes.string.isRequired,
+};
 
 const Projects = () => {
   return (
@@ -91,15 +146,9 @@ const Projects = () => {
                       {project.description}
                     </p>
 
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-4">
                       {project.technologies.map((tech, techIndex) => (
-                        <motion.span
-                          key={techIndex}
-                          whileHover={{ scale: 1.1 }}
-                          className="px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium bg-purple-500/10 dark:bg-purple-400/10 text-purple-600 dark:text-purple-300 rounded-full hover:bg-purple-500/20 dark:hover:bg-purple-400/20 transition-colors"
-                        >
-                          {tech}
-                        </motion.span>
+                        <TechIcon key={techIndex} tech={tech} />
                       ))}
                     </div>
                   </div>
@@ -123,7 +172,7 @@ const Projects = () => {
                         href={project.livedemo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-600 dark:from-purple-400 dark:to-pink-500 text-white rounded-lg hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
+                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 rounded-lg hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
                       >
                         <ExternalLink className="w-5 h-5" />
                         <span>Live Demo</span>

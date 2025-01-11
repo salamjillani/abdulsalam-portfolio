@@ -1,6 +1,28 @@
-import { motion } from "framer-motion";
 import { EXPERIENCES } from "../constants";
+import { motion } from "framer-motion";
 import { BriefcaseIcon } from "lucide-react";
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaFigma,
+  FaJsSquare,
+} from "react-icons/fa";
+import { SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
+
+const TechLogos = {
+  React: () => <FaReact className="w-6 h-6 text-[#61DAFB]" />,
+  JavaScript: () => <FaJsSquare className="w-6 h-6 text-[#F7DF1E]" />,
+  HTML: () => <FaHtml5 className="w-6 h-6 text-[#E34F26]" />,
+  CSS: () => <FaCss3Alt className="w-6 h-6 text-[#1572B6]" />,
+  Figma: () => <FaFigma className="w-6 h-6 text-[#F24E1E]" />,
+  "Adobe Photoshop": () => (
+    <SiAdobephotoshop className="w-6 h-6 text-[#31A8FF]" />
+  ),
+  "Adobe Illustrator": () => (
+    <SiAdobeillustrator className="w-6 h-6 text-[#FF9A00]" />
+  ),
+};
 
 const Experience = () => {
   return (
@@ -101,15 +123,16 @@ const Experience = () => {
                       {experience.description}
                     </p>
 
-                    <div className="flex flex-wrap gap-2 pt-2">
+                    <div className="flex flex-wrap gap-3 pt-2">
                       {experience.technologies.map((tech, techIndex) => (
-                        <motion.span
-                          whileHover={{ scale: 1.05 }}
+                        <motion.div
+                          whileHover={{ scale: 1.1 }}
                           key={techIndex}
-                          className="px-3 py-1 text-sm bg-purple-500/10 dark:bg-purple-400/10 text-purple-600 dark:text-purple-300 rounded-full hover:bg-purple-500/20 dark:hover:bg-purple-400/20 transition-colors cursor-pointer"
+                          className="p-2 bg-white/50 dark:bg-neutral-800/50 rounded-lg transition-colors cursor-pointer"
+                          title={tech}
                         >
-                          {tech}
-                        </motion.span>
+                          {TechLogos[tech] && TechLogos[tech]()}
+                        </motion.div>
                       ))}
                     </div>
                   </div>

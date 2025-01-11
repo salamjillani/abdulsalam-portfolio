@@ -44,7 +44,7 @@ const Hero = () => {
               <a
                 href="/Abdul Salam-CV.pdf"
                 download
-                className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all"
+                className="flex items-center justify-center text-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all"
               >
                 <DownloadIcon className="w-5 h-5 group-hover:animate-bounce" />
                 Download CV
