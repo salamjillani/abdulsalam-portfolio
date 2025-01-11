@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   return (
     <div className="overflow-x-hidden bg-white dark:bg-neutral-950 text-neutral-700 dark:text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
@@ -25,6 +26,7 @@ const App = () => {
         <Projects />
         <Contact />
         <Footer />
+        <ScrollToTop />
       </div>
     </div>
     </div>
