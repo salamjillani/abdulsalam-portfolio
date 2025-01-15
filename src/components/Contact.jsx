@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { CONTACT } from "../constants";
 import { MapPinIcon, PhoneIcon, MailIcon, SendIcon } from "lucide-react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,8 +19,35 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const validateForm = () => {
+    const { name, email, message } = formData;
+    if (!name || !email || !message) {
+      Swal.fire({
+        title: "Missing Information",
+        text: "Please fill in all required fields",
+        icon: "warning",
+        confirmButtonText: "Ok",
+        confirmButtonColor: "#9333ea",
+      });
+      return false;
+    }
+    return true;
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) return;
+
+    Swal.fire({
+      title: "Sending Message",
+      text: "Please wait...",
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      willOpen: () => {
+        Swal.showLoading();
+      },
+    });
 
     const serviceId = "service_ccm7sfw";
     const templateId = "template_m7rwozo";
@@ -32,18 +60,29 @@ const Contact = () => {
       message: formData.message,
     };
 
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        alert(
-          "Message sent successfully! - Abdul Salam will get back to you soon!",
-          response
-        );
-        setFormData({ name: "", email: "", message: "" });
-      })
-      .catch((error) => {
-        console.error("Error sending email", error);
+    try {
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+      await Swal.fire({
+        title: "Message Sent!",
+        text: "Abdul Salam will get back to you soon!",
+        icon: "success",
+        confirmButtonText: "Great!",
+        confirmButtonColor: "#9333ea",
       });
+
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error sending email", error);
+
+      Swal.fire({
+        title: "Oops...",
+        text: "Something went wrong! Please try again later.",
+        icon: "error",
+        confirmButtonText: "Ok",
+        confirmButtonColor: "#9333ea",
+      });
+    }
   };
 
   return (
@@ -189,9 +228,10 @@ const Contact = () => {
                     <input
                       name="name"
                       type="text"
-                      placeholder="Your Name"
+                      placeholder="Your Name *"
                       value={formData.name}
                       onChange={handleChange}
+                      required
                       className="w-full px-4 py-3 bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg border border-neutral-300 dark:border-neutral-700 focus:outline-none focus:border-purple-500 text-sm text-neutral-900 dark:text-neutral-300 placeholder-neutral-500"
                     />
                   </motion.div>
@@ -200,9 +240,10 @@ const Contact = () => {
                     <input
                       name="email"
                       type="email"
-                      placeholder="Your Email"
+                      placeholder="Your Email *"
                       value={formData.email}
                       onChange={handleChange}
+                      required
                       className="w-full px-4 py-3 bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg border border-neutral-300 dark:border-neutral-700 focus:outline-none focus:border-purple-500 text-sm text-neutral-900 dark:text-neutral-300 placeholder-neutral-500"
                     />
                   </motion.div>
@@ -211,9 +252,10 @@ const Contact = () => {
                 <motion.div whileHover={{ scale: 1.02 }}>
                   <textarea
                     name="message"
-                    placeholder="Your Message"
+                    placeholder="Your Message *"
                     value={formData.message}
                     onChange={handleChange}
+                    required
                     rows={6}
                     className="w-full px-4 py-3 bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg border border-neutral-300 dark:border-neutral-700 focus:outline-none focus:border-purple-500 text-sm text-neutral-900 dark:text-neutral-300 placeholder-neutral-500"
                   />
