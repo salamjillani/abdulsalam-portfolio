@@ -228,7 +228,7 @@ const Contact = () => {
                     <input
                       name="name"
                       type="text"
-                      placeholder="Your Name *"
+                      placeholder="Your Name"
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -240,7 +240,7 @@ const Contact = () => {
                     <input
                       name="email"
                       type="email"
-                      placeholder="Your Email *"
+                      placeholder="Your Email"
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -252,7 +252,7 @@ const Contact = () => {
                 <motion.div whileHover={{ scale: 1.02 }}>
                   <textarea
                     name="message"
-                    placeholder="Your Message *"
+                    placeholder="Your Message"
                     value={formData.message}
                     onChange={handleChange}
                     required
