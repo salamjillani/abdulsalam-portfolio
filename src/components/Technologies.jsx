@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb, SiTailwindcss, SiFigma } from "react-icons/si";
+import { SiMongodb, SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import {
   FaNodeJs,
   FaGitAlt,
@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 
 const technologies = [
+  { Icon: SiNextdotjs, color: "text-neutral-800", duration: 2, label: "Next.js" },
   {
     Icon: RiReactjsLine,
     color: "text-cyan-500",
@@ -40,7 +41,6 @@ const technologies = [
   },
   { Icon: FaHtml5, color: "text-orange-600", duration: 7, label: "HTML5" },
   { Icon: FaCss3Alt, color: "text-blue-600", duration: 3.5, label: "CSS3" },
-  { Icon: SiFigma, color: "text-purple-500", duration: 3, label: "Figma" },
 ];
 
 const Technologies = () => {
