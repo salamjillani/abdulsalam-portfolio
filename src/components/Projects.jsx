@@ -11,6 +11,7 @@ import {
   SiTensorflow,
   SiFramer,
   SiWebrtc,
+  SiThreedotjs
 } from "react-icons/si";
 
 const TechIcon = ({ tech }) => {
@@ -39,6 +40,9 @@ const TechIcon = ({ tech }) => {
     CSS: <FaCss3Alt {...iconProps} className="w-6 h-6 text-blue-500" />,
     "Framer Motion": (
       <SiFramer {...iconProps} className="w-6 h-6 text-purple-500" />
+    ),
+    "Three.js": (
+      <SiThreedotjs {...iconProps} className="w-6 h-6 text-black dark:text-white" />
     ),
   };
 

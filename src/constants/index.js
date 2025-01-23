@@ -21,6 +21,15 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Squid Game",
+    image: "/assets/projects/squidgame.jpg",
+    description:
+      "Squid Game is a web-based game that uses modern web technologies to create an interactive and visually appealing experience. The game involves players trying to reach the finish line without being detected during the 'Red Light' phases.",
+    technologies: ["React", "Three.js", "Tailwind"],
+    github: "https://github.com/codesofsalam/squidgame",
+    livedemo: "https://salamsquidgame.vercel.app/",
+  },
+  {
     title: "SalamChat",
     image: "/assets/projects/project-3.jpg",
     description:
