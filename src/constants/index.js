@@ -134,5 +134,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Karachi",
   phoneNo: "+923302488872",
-  email: "codesofsalam@gmail.com",
+  email: "salamjillani@gmail.com",
 };
