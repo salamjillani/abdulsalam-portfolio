@@ -7,7 +7,7 @@ const Navbar = () => {
     linkedin: "https://www.linkedin.com/in/salamjillani",
     github: "https://github.com/salamjillani",
     phone: "+923302488872",
-    email: "salamjillanis@gmail.com",
+    email: "salamjillani@gmail.com",
   };
 
   const socialLinks = [
