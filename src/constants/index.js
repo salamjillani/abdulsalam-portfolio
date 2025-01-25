@@ -26,7 +26,7 @@ export const PROJECTS = [
     description:
       "Squid Game is a web-based game that uses modern web technologies to create an interactive and visually appealing experience. The game involves players trying to reach the finish line without being detected during the 'Red Light' phases.",
     technologies: ["React", "Three.js", "Tailwind"],
-    github: "https://github.com/codesofsalam/squidgame",
+    github: "https://github.com/salamjillani/squidgame",
     livedemo: "https://salamsquidgame.vercel.app/",
   },
   {
@@ -35,7 +35,7 @@ export const PROJECTS = [
     description:
       "Real-time chat application using Socket.io for seamless communication between users. The application includes user authentication, ensuring secure access, and features such as live updates and chat room functionality for real-time message delivery and synchronization. It provides a smooth and interactive user experience, demonstrating expertise in real-time data handling",
     technologies: ["React", "Express.js", "Socket.io", "MongoDB", "Tailwind"],
-    github: "https://github.com/codesofsalam/salamchat-chatapp",
+    github: "https://github.com/salamjillani/salamchat-chatapp",
     livedemo: "https://salamchat.vercel.app/",
   },
   {
@@ -44,7 +44,7 @@ export const PROJECTS = [
     description:
       "An object detection app using React.js and TensorFlow.js, enabling image identification with object names and confidence levels.",
     technologies: ["React", "Tensorflow.js", "Tailwind"],
-    github: "https://github.com/codesofsalam/objectdetection-tensorflowjs",
+    github: "https://github.com/salamjillani/objectdetection-tensorflowjs",
     livedemo: "",
   },
 
@@ -54,7 +54,7 @@ export const PROJECTS = [
     description:
       "Real-time peer-to-peer video chat application using WebRTC for high-quality audio and video streaming. Leveraged Socket.io for room-based connections and dynamic stream negotiation. Features include secure room creation, live video/audio streaming, and adaptive stream quality, ensuring a seamless and user-friendly communication experience.",
     technologies: ["React", "Express.js", "Socket.io", "WebRTC", "CSS"],
-    github: "https://github.com/codesofsalam/react-videochat-webrtc",
+    github: "https://github.com/salamjillani/react-videochat-webrtc",
     livedemo: "",
   },
   {
@@ -70,7 +70,7 @@ export const PROJECTS = [
       "Tailwind",
       "Framer Motion",
     ],
-    github: "https://github.com/codesofsalam/shopville",
+    github: "https://github.com/salamjillani/shopville",
     livedemo: "https://shopville.vercel.app/",
   },
   {
@@ -79,7 +79,7 @@ export const PROJECTS = [
     description:
       "Saucy Spicy is a vibrant and user-friendly food ordering app designed to make discovering and enjoying meals effortless. With intuitive navigation, menu updates, and detailed meal descriptions, it ensures a smooth and engaging ordering experience. The app brings your favorite flavors right to your fingertips, making every meal an easy and enjoyable choice.",
     technologies: ["React", "Framer Motion", "Tailwind"],
-    github: "https://github.com/codesofsalam/saucyspicy",
+    github: "https://github.com/salamjillani/saucyspicy",
     livedemo: "https://saucyspicy.vercel.app/",
   },
   {
@@ -88,7 +88,7 @@ export const PROJECTS = [
     description:
       "Web platform designed to optimize workforce management using AI and blockchain. It aims to address challenges like skill shortages and inefficient manual processes by providing real-time workforce matching, forecasting, and data-driven insights. The platform targets industries needing scalable, automated staffing solutions.",
     technologies: ["React", "Tailwind", "Framer Motion"],
-    github: "https://github.com/codesofsalam/galaxium",
+    github: "https://github.com/salamjillani/galaxium",
     livedemo: "https://galaxium.vercel.app/",
   },
 
@@ -98,7 +98,7 @@ export const PROJECTS = [
     description:
       "Web app for managing book collections, featuring user authentication, book CRUD operations, and search.",
     technologies: ["MongoDB", "Express.js", "React", "Node.js"],
-    github: "https://github.com/codesofsalam/bookshelf",
+    github: "https://github.com/salamjillani/bookshelf",
     livedemo: "",
   },
 
@@ -108,7 +108,7 @@ export const PROJECTS = [
     description:
       "Real-time weather app which provides up-to-date weather information using the OpenWeather API.",
     technologies: ["React", "CSS"],
-    github: "https://github.com/codesofsalam/react-weather-app",
+    github: "https://github.com/salamjillani/react-weather-app",
     livedemo: "https://weathernow-zeta.vercel.app/",
   },
   {
@@ -117,7 +117,7 @@ export const PROJECTS = [
     description:
       "A To-Do list app built with React.js that stores tasks in local storage. It allows users to add, edit, and remove tasks, keeping them saved even after a page refresh.",
     technologies: ["React", "CSS"],
-    github: "https://github.com/codesofsalam/todo-localstorage-react",
+    github: "https://github.com/salamjillani/todo-localstorage-react",
     livedemo: "https://taskmaster-kappa-ten.vercel.app/",
   },
   {
@@ -126,7 +126,7 @@ export const PROJECTS = [
     description:
       "A simple calculator app built with React.js. It allows users to perform basic arithmetic operations with an intuitive interface.",
     technologies: ["React", "CSS"],
-    github: "https://github.com/codesofsalam/calculator-react",
+    github: "https://github.com/salamjillani/calculator-react",
     livedemo: "https://quickcalc-orcin.vercel.app/",
   },
 ];
