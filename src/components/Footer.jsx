@@ -5,13 +5,13 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/codesofsalam", label: "GitHub" },
+    { icon: Github, href: "https://github.com/salamjillani", label: "GitHub" },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/abdulsalamshah",
+      href: "https://linkedin.com/in/salamjillani",
       label: "LinkedIn",
     },
-    { icon: MailIcon, href: "mailto:codesofsalam@gmail.com", label: "Email" },
+    { icon: MailIcon, href: "mailto:salamjillani@gmail.com", label: "Email" },
     { icon: PhoneIcon, href: "tel:+923302488872", label: "Phone" },
   ];
 
