@@ -4,10 +4,10 @@ import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const contactInfo = {
-    linkedin: "https://www.linkedin.com/in/abdulsalamshah",
-    github: "https://github.com/codesofsalam",
+    linkedin: "https://www.linkedin.com/in/salamjillani",
+    github: "https://github.com/salamjillani",
     phone: "+923302488872",
-    email: "codesofsalam@gmail.com",
+    email: "salamjillanis@gmail.com",
   };
 
   const socialLinks = [
