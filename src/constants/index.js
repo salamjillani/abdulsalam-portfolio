@@ -5,7 +5,7 @@ export const ABOUT_TEXT = `I am a dedicated Full Stack Developer passionate abou
 export const EXPERIENCES = [
   {
     year: "Dec 2024 - Jan 2025",
-    role: "Full Stack Developer-Intern",
+    role: "Full Stack Developer Intern",
     company: "ANB Tech Solution",
     description: `Worked on full-stack web development, creating user-friendly interfaces with React.js, building APIs with Node.js and Express.js, and optimized MongoDB for efficient data management.`,
     technologies: ["React", "MongoDB", "Expressjs", "Nodejs", "TailwindCSS"],
@@ -19,7 +19,7 @@ export const EXPERIENCES = [
   },
   {
     year: "Jan 2022 - Apr 2022",
-    role: "Intern",
+    role: "Creative Design Intern",
     company: "National Freelance Training Program",
     description: `Collaborated on various design projects, creating visually appealing graphics for digital platforms. Focused on brand consistency, delivering designs that enhanced user engagement and supported marketing initiatives.`,
     technologies: ["Adobe Photoshop", "Adobe Illustrator", "Figma"],
