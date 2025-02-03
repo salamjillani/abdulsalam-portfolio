@@ -7,8 +7,9 @@ import {
   FaCss3Alt,
   FaFigma,
   FaJsSquare,
+  FaNodeJs
 } from "react-icons/fa";
-import { SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
+import { SiAdobephotoshop, SiAdobeillustrator, SiMongodb, SiTailwindcss } from "react-icons/si";
 
 const TechLogos = {
   React: () => <FaReact className="w-6 h-6 text-[#61DAFB]" />,
@@ -16,6 +17,10 @@ const TechLogos = {
   HTML: () => <FaHtml5 className="w-6 h-6 text-[#E34F26]" />,
   CSS: () => <FaCss3Alt className="w-6 h-6 text-[#1572B6]" />,
   Figma: () => <FaFigma className="w-6 h-6 text-[#F24E1E]" />,
+  MongoDB: () => <SiMongodb className="w-6 h-6 text-green-500" />,
+  Nodejs: () => <FaNodeJs className="w-6 h-6 text-green-600" />,
+  Expressjs: () => <img src="/assets/expjs.png" alt="Express.js" className="w-6 h-6" />,
+  TailwindCSS: () => <SiTailwindcss className="w-6 h-6 text-blue-400" />,
   "Adobe Photoshop": () => (
     <SiAdobephotoshop className="w-6 h-6 text-[#31A8FF]" />
   ),
