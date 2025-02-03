@@ -67,7 +67,7 @@ const Hero = () => {
                       group-hover:w-full transition-all duration-300 ease-out"
                 />
                 <div className="absolute -inset-px rounded-xl" />
-                <span className="relative">Let&apos;s Talk</span>
+                <span className="relative">Let&apos;s Discuss</span>
               </a>
             </div>
           </div>
