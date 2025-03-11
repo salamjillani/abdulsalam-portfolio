@@ -1,21 +1,21 @@
-export const HERO_CONTENT = `Hello, This is Abdul Salam, a full-stack developer passionate about building end-to-end web solutions with React.js for dynamic front-end experiences and Node.js, Express.js, & MongoDB for scalable back-end architecture. With more than a year of experience, I design robust APIs, optimize databases, and craft seamless user interfaces, leveraging full-stack expertise to drive innovation and deliver impactful solutions.`;
+export const HERO_CONTENT = `Hello, this is Abdul Salam, a full-stack developer passionate about building end-to-end web solutions. I specialize in creating dynamic user experiences, developing scalable backend architectures, designing robust APIs, optimizing databases, and crafting seamless interfaces. With more than a year of experience, I leverage full-stack expertise to drive innovation and deliver impactful solutions.`;
 
-export const ABOUT_TEXT = `I am a dedicated Full Stack Developer passionate about building efficient, scalable, and user-friendly web applications. With over a year of experience, I specialize in React, Node.js, Express.js, and MongoDB, developing both frontend and backend solutions to enhance user experience and performance. Driven by curiosity and a love for problem-solving, I thrive in collaborative environments and continuously seek to learn and innovate. Beyond coding, I explore new technologies, contribute to open-source projects, and stay active in the ever-evolving world of web development.`;
+export const ABOUT_TEXT = `I am a dedicated full-stack developer passionate about building efficient, scalable, and user-friendly web applications. With over a year of experience, I specialize in WordPress, PHP, and MySQL, and in the MERN stack, developing both frontend and backend solutions to enhance user experience and performance.Driven by curiosity and a love for problem-solving, I thrive in collaborative environments and continuously seek to learn and innovate. Beyond coding, I explore new technologies, contribute to open-source projects, and stay engaged in the ever-evolving world of web development.`;
 
 export const EXPERIENCES = [
   {
     year: "Dec 2024 - Jan 2025",
     role: "Full Stack Developer Intern",
     company: "ANB Tech Solution",
-    description: `Worked on full-stack web development, creating user-friendly interfaces with React.js, building APIs with Node.js and Express.js, and optimized MongoDB for efficient data management.`,
-    technologies: ["React", "MongoDB", "Expressjs", "Nodejs", "TailwindCSS"],
+    description: `Worked on full-stack web development, designing user-friendly interfaces, developing and integrating APIs, and optimizing databases for efficient data management.`,
+    technologies: ["React", "JavaScript", "WordPress", "PHP", "MongoDB", "Nodejs", "TailwindCSS"],
   },
   {
     year: "Jun 2023 - Jul 2024",
     role: "Front End Developer",
     company: "CloudLink",
     description: `Developed and delivered front-end websites for diverse clients. Embrace and integrate emerging industry trends into strategies. Streamlined website development processes, resulting in improved efficiency and faster project turnaround.`,
-    technologies: ["React", "JavaScript", "HTML", "CSS", "Figma"],
+    technologies: ["WordPress", "React", "JavaScript", "HTML", "CSS", "Figma"],
   },
   {
     year: "Jan 2022 - Apr 2022",

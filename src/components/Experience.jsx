@@ -7,9 +7,11 @@ import {
   FaCss3Alt,
   FaFigma,
   FaJsSquare,
-  FaNodeJs
+  FaNodeJs,
+  FaWordpress,
+  FaPhp
 } from "react-icons/fa";
-import { SiAdobephotoshop, SiAdobeillustrator, SiMongodb, SiTailwindcss } from "react-icons/si";
+import { SiAdobephotoshop, SiAdobeillustrator, SiMongodb, SiTailwindcss, SiMysql } from "react-icons/si";
 
 const TechLogos = {
   React: () => <FaReact className="w-6 h-6 text-[#61DAFB]" />,
@@ -27,6 +29,9 @@ const TechLogos = {
   "Adobe Illustrator": () => (
     <SiAdobeillustrator className="w-6 h-6 text-[#FF9A00]" />
   ),
+  WordPress: () => <FaWordpress className="w-6 h-6 text-[#21759B]" />,
+  PHP: () => <FaPhp className="w-6 h-6 text-[#777BB4]" />,
+  MySQL: () => <SiMysql className="w-6 h-6 text-[#4479A1]" />
 };
 
 const Experience = () => {

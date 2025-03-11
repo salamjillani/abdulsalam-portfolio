@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb, SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiMongodb, SiTailwindcss, SiWordpress, SiWebflow, SiPhp, SiMysql, SiFigma } from "react-icons/si";
 import {
   FaNodeJs,
   FaGitAlt,
@@ -10,13 +10,20 @@ import {
 } from "react-icons/fa";
 
 const technologies = [
-  { Icon: SiNextdotjs, color: "text-neutral-800", duration: 2, label: "Next.js" },
   {
     Icon: RiReactjsLine,
     color: "text-cyan-500",
     duration: 2.5,
     label: "React",
   },
+  {
+    Icon: FaJsSquare,
+    color: "text-yellow-500",
+    duration: 4.5,
+    label: "JavaScript",
+  },
+  { Icon: SiWordpress, color: "text-blue-700", duration: 5.5, label: "WordPress" },
+  { Icon: SiWebflow, color: "text-blue-400", duration: 6.5, label: "Webflow" },
   { Icon: FaNodeJs, color: "text-green-600", duration: 3, label: "Node.js" },
   {
     type: "image",
@@ -25,14 +32,9 @@ const technologies = [
     label: "Express.js",
     alt: "Express.js",
   },
+  { Icon: SiPhp, color: "text-indigo-500", duration: 4.2, label: "PHP" },
+  { Icon: SiMysql, color: "text-blue-500", duration: 3.7, label: "MySQL" },
   { Icon: SiMongodb, color: "text-green-500", duration: 5, label: "MongoDB" },
-  {
-    Icon: FaJsSquare,
-    color: "text-yellow-500",
-    duration: 4.5,
-    label: "JavaScript",
-  },
-  { Icon: FaGitAlt, color: "text-orange-500", duration: 6, label: "Git" },
   {
     Icon: SiTailwindcss,
     color: "text-blue-400",
@@ -41,6 +43,8 @@ const technologies = [
   },
   { Icon: FaHtml5, color: "text-orange-600", duration: 7, label: "HTML5" },
   { Icon: FaCss3Alt, color: "text-blue-600", duration: 3.5, label: "CSS3" },
+  { Icon: SiFigma, color: "text-pink-600", duration: 5.8, label: "Figma" },
+  { Icon: FaGitAlt, color: "text-orange-500", duration: 6, label: "Git" },
 ];
 
 const Technologies = () => {
