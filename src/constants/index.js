@@ -37,6 +37,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Review Analytics Platform",
+    image: "/assets/projects/reviewanalytics.png",
+    description:
+      "A web-based system designed to process and analyze customer reviews for fast delivery agents. The platform provides automated and manual tagging of reviews, a React-based dashboard for analytics visualization, and role-based access control (RBAC) to manage user permissions.",
+      technologies: ["React", "Express.js", "Socket.io", "MongoDB", "Tailwind"],
+    github: "https://github.com/salamjillani/review-analytics",
+  },
+  {
     title: "Squid Game",
     image: "/assets/projects/squidgame.jpg",
     description:
