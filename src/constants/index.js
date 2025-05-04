@@ -5,6 +5,13 @@ export const ABOUT_TEXT = `I am a dedicated full-stack developer passionate abou
 Driven by curiosity and a love for problem-solving, I thrive in collaborative environments and continuously seek to learn and innovate. Beyond coding, I explore new technologies, contribute to open-source projects, and stay engaged in the ever-evolving world of web development.`;
 
 export const EXPERIENCES = [
+   {
+    year: "Apr 2025 - Present",
+    role: "Full Stack Developer",
+    company: "Sapphire Consulting Services",
+    description: `Working and developing scalable backend systems and integrating modern frontend frameworks using MERN and Laravel for a seamless user experience.`,
+    technologies: ["React", "JavaScript", "MongoDB", "Nodejs", "PHP"],
+  },
   {
     year: "Dec 2024 - Jan 2025",
     role: "Full Stack Developer Intern",
