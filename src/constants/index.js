@@ -9,7 +9,7 @@ export const EXPERIENCES = [
     year: "Apr 2025 - Present",
     role: "Full Stack Developer",
     company: "Sapphire Consulting Services",
-    description: `Working and developing scalable backend systems and integrating modern frontend frameworks using MERN and Laravel for a seamless user experience.`,
+    description: `Working and developing full-stack web applications using MERN and Laravel.`,
     technologies: ["React", "JavaScript", "MongoDB", "Nodejs", "PHP"],
   },
   {
