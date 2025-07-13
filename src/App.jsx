@@ -4,6 +4,7 @@ import About from "./components/About";
 import Technologies from "./components/Technologies";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -24,6 +25,7 @@ const App = () => {
         <Technologies />
         <Experience />
         <Projects />
+        <Testimonials />
         <Contact />
         <Footer />
         <ScrollToTop />

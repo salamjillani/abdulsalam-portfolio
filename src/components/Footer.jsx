@@ -33,7 +33,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="text-neutral-600 dark:text-neutral-400 hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
+                className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
                 aria-label={social.label}
               >
                 <social.icon className="w-6 h-6" />
@@ -51,7 +51,7 @@ const Footer = () => {
                 transition={{ duration: 0.5 }}
                 className="bg-white dark:bg-neutral-900 px-3 py-1"
               >
-                <Heart className="w-6 h-6 text-pink-500 dark:text-pink-400" />
+                <Heart className="w-6 h-6 text-neutral-600 dark:text-neutral-400" />
               </motion.div>
             </div>
           </div>
@@ -74,8 +74,8 @@ const Footer = () => {
       </div>
 
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -left-1/4 -top-1/4 w-1/2 h-1/2 bg-purple-500/10 dark:bg-purple-400/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -right-1/4 -bottom-1/4 w-1/2 h-1/2 bg-pink-500/10 dark:bg-pink-400/10 rounded-full blur-3xl animate-pulse delay-300" />
+        <div className="absolute -left-1/4 -top-1/4 w-1/2 h-1/2 bg-neutral-200/30 dark:bg-neutral-700/30 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute -right-1/4 -bottom-1/4 w-1/2 h-1/2 bg-neutral-300/30 dark:bg-neutral-600/30 rounded-full blur-3xl animate-pulse delay-300" />
       </div>
     </footer>
   );

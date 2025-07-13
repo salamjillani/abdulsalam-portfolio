@@ -22,8 +22,7 @@ const technologies = [
     duration: 4.5,
     label: "JavaScript",
   },
-  { Icon: SiWordpress, color: "text-blue-700", duration: 5.5, label: "WordPress" },
-  { Icon: SiWebflow, color: "text-blue-400", duration: 6.5, label: "Webflow" },
+
   { Icon: FaNodeJs, color: "text-green-600", duration: 3, label: "Node.js" },
   {
     type: "image",
@@ -33,8 +32,10 @@ const technologies = [
     alt: "Express.js",
   },
   { Icon: SiPhp, color: "text-indigo-500", duration: 4.2, label: "PHP" },
-  { Icon: SiMysql, color: "text-blue-500", duration: 3.7, label: "MySQL" },
   { Icon: SiMongodb, color: "text-green-500", duration: 5, label: "MongoDB" },
+  { Icon: SiMysql, color: "text-blue-500", duration: 3.7, label: "MySQL" },
+  { Icon: SiWordpress, color: "text-blue-700", duration: 5.5, label: "WordPress" },
+  { Icon: SiWebflow, color: "text-blue-400", duration: 6.5, label: "Webflow" },
   {
     Icon: SiTailwindcss,
     color: "text-blue-400",
@@ -62,86 +63,92 @@ const Technologies = () => {
   });
 
   return (
-    <div className="font-mono relative py-16 sm:py-24 border-b border-neutral-200 dark:border-neutral-800">
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-52 h-52 sm:w-72 sm:h-72 bg-purple-500/5 dark:bg-purple-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 left-1/4 w-52 h-52 sm:w-72 sm:h-72 bg-blue-500/5 dark:bg-blue-500/10 rounded-full blur-3xl" />
+    <div className="font-mono relative min-h-screen flex items-center">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-50 via-white to-neutral-100 dark:from-neutral-900 dark:via-neutral-900 dark:to-neutral-800" />
+        <div className="absolute top-0 left-0 w-full h-full opacity-30 dark:opacity-10">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-neutral-200 dark:bg-neutral-700 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/3 right-1/3 w-80 h-80 bg-neutral-300 dark:bg-neutral-600 rounded-full blur-3xl" />
+        </div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-12 sm:mb-20 text-center space-y-4"
-        >
-          <span className="inline-block px-4 py-2 rounded-full bg-purple-500/5 dark:bg-purple-500/10 text-sm font-medium text-purple-600 dark:text-purple-400 tracking-wider uppercase">
-            Stack & Tools
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold flex flex-wrap justify-center text-neutral-900 dark:text-neutral-100">
-            <span className="mr-5">Technologies</span>
-            <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-              I Work With
-            </span>
-          </h2>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 max-w-6xl mx-auto"
-        >
-          {technologies.map((tech, index) => (
-            <motion.div
-              key={index}
-              variants={iconVariants(tech.duration)}
-              initial="initial"
-              animate="animate"
-              whileHover={{ scale: 1.1 }}
-              className="group relative flex flex-col items-center"
+      <div className="container mx-auto px-6 py-8">
+        <div className="text-center space-y-12">
+          {/* Header Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="space-y-4"
+          >
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-4xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-100 leading-tight"
             >
-              <div
-                className="relative p-4 sm:p-6 rounded-xl 
-                bg-white/50 dark:bg-neutral-900/50 
-                border border-neutral-200 dark:border-neutral-800 
-                backdrop-blur-sm 
-                hover:border-neutral-300 dark:hover:border-neutral-700 
-                transition-all duration-300
-                hover:shadow-lg hover:shadow-purple-500/10"
-              >
-                {tech.type === "image" ? (
-                  <img
-                    src={tech.src}
-                    alt={tech.alt}
-                    className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
-                  />
-                ) : (
-                  <tech.Icon
-                    className={`text-5xl sm:text-6xl ${tech.color} transition-transform duration-300 group-hover:scale-110`}
-                  />
-                )}
+              Technologies{" "}
+              <span className="text-neutral-700 dark:text-neutral-300">
+                I Work With
+              </span>
+            </motion.h2>
+            
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="text-xl lg:text-2xl font-medium text-neutral-600 dark:text-neutral-400"
+            >
+              Stack & Tools
+            </motion.p>
+          </motion.div>
 
-                <div
-                  className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full 
-                  opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                >
-                  <div
-                    className="px-2 py-1 sm:px-3 sm:py-1 text-xs sm:text-sm 
-                    text-neutral-700 dark:text-white 
-                    bg-white dark:bg-neutral-900 
-                    border border-neutral-200 dark:border-neutral-800
-                    rounded-md shadow-lg whitespace-nowrap"
-                  >
-                    {tech.label}
+          {/* Technologies Grid */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
+          >
+            {technologies.map((tech, index) => (
+              <motion.div
+                key={index}
+                variants={iconVariants(tech.duration)}
+                initial="initial"
+                animate="animate"
+                whileHover={{ scale: 1.05 }}
+                className="group relative flex flex-col items-center"
+              >
+                <div className="relative p-6 sm:p-8 rounded-2xl bg-white dark:bg-neutral-900 border-4 border-white dark:border-neutral-900 shadow-2xl hover:shadow-3xl transition-all duration-300">
+                  {tech.type === "image" ? (
+                    <img
+                      src={tech.src}
+                      alt={tech.alt}
+                      className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+                    />
+                  ) : (
+                    <tech.Icon
+                      className={`text-4xl sm:text-5xl ${tech.color} transition-transform duration-300 group-hover:scale-110`}
+                    />
+                  )}
+
+                  {/* Tooltip */}
+                  <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                    <div className="px-3 py-2 text-sm text-neutral-700 dark:text-neutral-300 bg-white dark:bg-neutral-900 border-2 border-neutral-200 dark:border-neutral-800 rounded-lg shadow-lg whitespace-nowrap">
+                      {tech.label}
+                      <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-white dark:bg-neutral-900 border-l-2 border-t-2 border-neutral-200 dark:border-neutral-800 rotate-45"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </div>
   );

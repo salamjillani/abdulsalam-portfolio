@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { CONTACT } from "../constants";
-import { MapPinIcon, PhoneIcon, MailIcon, SendIcon } from "lucide-react";
+import { MapPin, Phone, Mail, Send } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
@@ -27,7 +27,7 @@ const Contact = () => {
         text: "Please fill in all required fields",
         icon: "warning",
         confirmButtonText: "Ok",
-        confirmButtonColor: "#9333ea",
+        confirmButtonColor: "#171717",
       });
       return false;
     }
@@ -68,7 +68,7 @@ const Contact = () => {
         text: "Abdul Salam will get back to you soon!",
         icon: "success",
         confirmButtonText: "Great!",
-        confirmButtonColor: "#9333ea",
+        confirmButtonColor: "#171717",
       });
 
       setFormData({ name: "", email: "", message: "" });
@@ -80,197 +80,171 @@ const Contact = () => {
         text: "Something went wrong! Please try again later.",
         icon: "error",
         confirmButtonText: "Ok",
-        confirmButtonColor: "#9333ea",
+        confirmButtonColor: "#171717",
       });
     }
   };
 
   return (
-    <div
-      className="font-mono min-h-screen py-8 md:py-12 lg:py-24 bg-gradient-to-b relative overflow-hidden px-4 sm:px-6"
-      id="contact"
-    >
+    <div className="font-mono relative min-h-screen py-20" id="contact">
+      {/* Subtle background pattern */}
       <div className="absolute inset-0 -z-10">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="absolute top-1/4 right-1/4 w-36 md:w-72 lg:w-96 h-36 md:h-72 lg:h-96 bg-purple-500/10 dark:bg-purple-400/10 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="absolute bottom-1/4 left-1/4 w-36 md:w-72 lg:w-96 h-36 md:h-72 lg:h-96 bg-pink-500/10 dark:bg-pink-400/10 rounded-full blur-3xl"
-        />
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-50 via-white to-neutral-100 dark:from-neutral-900 dark:via-neutral-900 dark:to-neutral-800" />
+        <div className="absolute top-0 left-0 w-full h-full opacity-30 dark:opacity-10">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-neutral-200 dark:bg-neutral-700 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/3 right-1/3 w-80 h-80 bg-neutral-300 dark:bg-neutral-600 rounded-full blur-3xl" />
+        </div>
       </div>
 
-      <div className="container mx-auto max-w-7xl">
+      <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-8 md:mb-12"
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
         >
-          <motion.span
-            whileHover={{ scale: 1.05 }}
-            className="inline-block px-3 py-1 text-xs md:text-sm font-medium text-purple-500 dark:text-purple-400 bg-purple-500/10 dark:bg-purple-400/10 rounded-full tracking-wider uppercase mb-2"
-          >
-            Let&apos;s Connect
-          </motion.span>
-          <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-100">
-            Get In
-            <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-pink-600 bg-clip-text text-transparent">
-              {" "}
-              Touch
-            </span>
+          <h2 className="text-4xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+            Get In Touch
           </h2>
+          <p className="text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto whitespace-nowrap">
+            Have a project in mind? Let&apos;s discuss how we can work together
+          </p>
         </motion.div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Contact Information */}
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="space-y-4 md:space-y-6"
+              transition={{ duration: 0.8 }}
+              className="space-y-8"
             >
-              <div className="bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl rounded-lg md:rounded-xl border border-neutral-200/50 dark:border-neutral-800/50 p-4 md:p-6 lg:p-8 shadow-xl">
-                <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+              <div className="space-y-4">
+                <h3 className="text-2xl lg:text-3xl font-bold text-neutral-900 dark:text-neutral-100">
                   Contact Information
                 </h3>
+              </div>
 
-                <div className="space-y-3 md:space-y-7">
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className="flex items-center gap-3 md:gap-4 p-3 bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg"
-                  >
-                    <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-purple-500/10 dark:bg-purple-400/10 rounded-lg">
-                      <MapPinIcon className="w-4 h-4 md:w-5 md:h-5 text-purple-500 dark:text-purple-400" />
-                    </div>
-                    <div>
-                      <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 font-medium mb-0.5">
-                        Location
-                      </p>
-                      <p className="text-xs md:text-sm text-neutral-600 dark:text-neutral-400">
-                        {CONTACT.address}
-                      </p>
-                    </div>
-                  </motion.div>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-neutral-100 dark:bg-neutral-800 rounded-full flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-neutral-600 dark:text-neutral-400" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
+                      Location
+                    </h4>
+                    <p className="text-neutral-600 dark:text-neutral-400">
+                      {CONTACT.address}
+                    </p>
+                  </div>
+                </div>
 
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className="flex items-center gap-3 md:gap-4 p-3 bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg"
-                  >
-                    <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-purple-500/10 dark:bg-purple-400/10 rounded-lg">
-                      <PhoneIcon className="w-4 h-4 md:w-5 md:h-5 text-purple-500 dark:text-purple-400" />
-                    </div>
-                    <div>
-                      <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 font-medium mb-0.5">
-                        Phone
-                      </p>
-                      <p className="text-xs md:text-sm text-neutral-600 dark:text-neutral-400">
-                        {CONTACT.phoneNo}
-                      </p>
-                    </div>
-                  </motion.div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-neutral-100 dark:bg-neutral-800 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-neutral-600 dark:text-neutral-400" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
+                      Phone
+                    </h4>
+                    <a
+                      href={`tel:${CONTACT.phoneNo}`}
+                      className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+                    >
+                      {CONTACT.phoneNo}
+                    </a>
+                  </div>
+                </div>
 
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className="flex items-center gap-3 md:gap-4 p-3 bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg"
-                  >
-                    <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-purple-500/10 dark:bg-purple-400/10 rounded-lg">
-                      <MailIcon className="w-4 h-4 md:w-5 md:h-5 text-purple-500 dark:text-purple-400" />
-                    </div>
-                    <div>
-                      <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 font-medium mb-0.5">
-                        Email
-                      </p>
-                      <a
-                        href={`mailto:${CONTACT.email}`}
-                        className="text-xs md:text-sm text-neutral-600 dark:text-neutral-400 hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
-                      >
-                        {CONTACT.email}
-                      </a>
-                    </div>
-                  </motion.div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-neutral-100 dark:bg-neutral-800 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-neutral-600 dark:text-neutral-400" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
+                      Email
+                    </h4>
+                    <a
+                      href={`mailto:${CONTACT.email}`}
+                      className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+                    >
+                      {CONTACT.email}
+                    </a>
+                  </div>
                 </div>
               </div>
             </motion.div>
 
+            {/* Contact Form */}
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
+              initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.8 }}
             >
-              <motion.form
-                onSubmit={handleSubmit}
-                className="bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl rounded-lg md:rounded-xl border border-neutral-200/50 dark:border-neutral-800/50 p-4 md:p-6 lg:p-8 shadow-xl space-y-4"
-              >
-                <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-                  Send Message
-                </h3>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="space-y-4">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-neutral-900 dark:text-neutral-100">
+                    Send Message
+                  </h3>
+                </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <motion.div whileHover={{ scale: 1.02 }}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
+                      Your Name
+                    </label>
                     <input
                       name="name"
                       type="text"
-                      placeholder="Your Name"
+                      placeholder="Enter your name"
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg border border-neutral-300 dark:border-neutral-700 focus:outline-none focus:border-purple-500 text-sm text-neutral-900 dark:text-neutral-300 placeholder-neutral-500"
+                      className="w-full px-4 py-3 border-2 border-neutral-200 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 focus:border-neutral-900 dark:focus:border-neutral-100 focus:outline-none transition-colors"
                     />
-                  </motion.div>
+                  </div>
 
-                  <motion.div whileHover={{ scale: 1.02 }}>
+                  <div>
+                    <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
+                      Your Email
+                    </label>
                     <input
                       name="email"
                       type="email"
-                      placeholder="Your Email"
+                      placeholder="Enter your email"
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg border border-neutral-300 dark:border-neutral-700 focus:outline-none focus:border-purple-500 text-sm text-neutral-900 dark:text-neutral-300 placeholder-neutral-500"
+                      className="w-full px-4 py-3 border-2 border-neutral-200 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 focus:border-neutral-900 dark:focus:border-neutral-100 focus:outline-none transition-colors"
                     />
-                  </motion.div>
+                  </div>
                 </div>
 
-                <motion.div whileHover={{ scale: 1.02 }}>
+                <div>
+                  <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
+                    Your Message
+                  </label>
                   <textarea
                     name="message"
-                    placeholder="Your Message"
+                    placeholder="Enter your message"
                     value={formData.message}
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg border border-neutral-300 dark:border-neutral-700 focus:outline-none focus:border-purple-500 text-sm text-neutral-900 dark:text-neutral-300 placeholder-neutral-500"
+                    className="w-full px-4 py-3 border-2 border-neutral-200 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 focus:border-neutral-900 dark:focus:border-neutral-100 focus:outline-none transition-colors resize-none"
                   />
-                </motion.div>
+                </div>
 
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-600 dark:from-purple-400 dark:to-pink-500 text-white rounded-lg text-sm font-medium hover:opacity-90 transition-all"
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors duration-200"
                 >
-                  <SendIcon className="w-4 h-4" />
+                  <Send className="w-5 h-5" />
                   Send Message
-                </motion.button>
-              </motion.form>
+                </button>
+              </form>
             </motion.div>
           </div>
         </div>

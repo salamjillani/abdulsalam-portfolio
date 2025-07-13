@@ -15,45 +15,42 @@ import {
 } from "react-icons/si";
 
 const TechIcon = ({ tech }) => {
-  const iconProps = { className: "w-8 h-8" };
+  const iconProps = { className: "w-5 h-5" };
 
   const techMap = {
-    React: <FaReact {...iconProps} className="w-6 h-6 text-[#61DAFB]" />,
+    React: <FaReact {...iconProps} className="w-5 h-5 text-[#61DAFB]" />,
     "Express.js": (
-      <SiExpress {...iconProps} className="w-6 h-6 text-gray-600" />
+      <SiExpress {...iconProps} className="w-5 h-5 text-neutral-600" />
     ),
     "Socket.io": (
       <SiSocketdotio
         {...iconProps}
-        className="w-6 h-6 text-black dark:text-white"
+        className="w-5 h-5 text-neutral-800 dark:text-neutral-200"
       />
     ),
-    MongoDB: <SiMongodb {...iconProps} className="w-6 h-6 text-green-500" />,
+    MongoDB: <SiMongodb {...iconProps} className="w-5 h-5 text-green-600" />,
     Tailwind: (
-      <SiTailwindcss {...iconProps} className="w-6 h-6 text-cyan-500" />
+      <SiTailwindcss {...iconProps} className="w-5 h-5 text-cyan-600" />
     ),
     "Tensorflow.js": (
-      <SiTensorflow {...iconProps} className="w-6 h-6 text-orange-500" />
+      <SiTensorflow {...iconProps} className="w-5 h-5 text-orange-600" />
     ),
-    WebRTC: <SiWebrtc {...iconProps} className="w-6 h-6 text-gray-600" />,
-    "Node.js": <FaNodeJs {...iconProps} className="w-6 h-6 text-green-600" />,
-    CSS: <FaCss3Alt {...iconProps} className="w-6 h-6 text-blue-500" />,
+    WebRTC: <SiWebrtc {...iconProps} className="w-5 h-5 text-neutral-600" />,
+    "Node.js": <FaNodeJs {...iconProps} className="w-5 h-5 text-green-600" />,
+    CSS: <FaCss3Alt {...iconProps} className="w-5 h-5 text-blue-600" />,
     "Framer Motion": (
-      <SiFramer {...iconProps} className="w-6 h-6 text-purple-500" />
+      <SiFramer {...iconProps} className="w-5 h-5 text-purple-600" />
     ),
     "Three.js": (
-      <SiThreedotjs {...iconProps} className="w-6 h-6 text-black dark:text-white" />
+      <SiThreedotjs {...iconProps} className="w-5 h-5 text-neutral-800 dark:text-neutral-200" />
     ),
   };
 
   return (
-    <motion.div whileHover={{ scale: 1.1 }} className="relative">
-      <div className="p-3 bg-white dark:bg-neutral-800 rounded-lg shadow-sm">
-        {techMap[tech] || (
-          <FaDatabase {...iconProps} className="text-gray-500" />
-        )}
-      </div>
-    </motion.div>
+    <div className="flex items-center gap-2 px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-300">
+      {techMap[tech] || <FaDatabase {...iconProps} className="text-neutral-500" />}
+      <span>{tech}</span>
+    </div>
   );
 };
 
@@ -63,127 +60,97 @@ TechIcon.propTypes = {
 
 const Projects = () => {
   return (
-    <div className="font-mono min-h-screen py-24 bg-gradient-to-b relative overflow-hidden">
+    <div className="font-mono relative min-h-screen py-20">
+      {/* Subtle background pattern */}
       <div className="absolute inset-0 -z-10">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/10 dark:bg-purple-400/10 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-pink-500/10 dark:bg-pink-400/10 rounded-full blur-3xl"
-        />
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-50 via-white to-neutral-100 dark:from-neutral-900 dark:via-neutral-900 dark:to-neutral-800" />
+        <div className="absolute top-0 left-0 w-full h-full opacity-30 dark:opacity-10">
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-neutral-200 dark:bg-neutral-700 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/3 left-1/3 w-80 h-80 bg-neutral-300 dark:bg-neutral-600 rounded-full blur-3xl" />
+        </div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mb-20 text-center"
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
         >
-          <motion.span
-            whileHover={{ scale: 1.05 }}
-            className="inline-block px-4 py-1 rounded-full text-sm font-medium text-purple-500 dark:text-purple-400 bg-purple-500/10 dark:bg-purple-400/10 tracking-wider uppercase mb-4"
-          >
-            Portfolio Showcase
-          </motion.span>
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-100">
-            Featured
-            <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-pink-600 bg-clip-text text-transparent">
-              {" "}
-              Projects
-            </span>
+          <h2 className="text-4xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+            Featured Projects
           </h2>
+          <p className="text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+            A collection of work that showcases my skills and passion for development
+          </p>
         </motion.div>
 
-        <div className="space-y-16 sm:space-y-20">
+        <div className="max-w-6xl mx-auto space-y-20">
           {PROJECTS.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
               className="group"
             >
-              <div className="flex flex-col lg:flex-row items-stretch lg:gap-12 gap-8">
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                  className="w-full lg:w-1/2 flex items-center"
-                >
-                  <div className="relative rounded-xl overflow-hidden shadow-2xl w-full">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-pink-500/20 dark:from-purple-400/20 dark:to-pink-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className={`grid lg:grid-cols-2 gap-12 items-center ${
+                index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
+              }`}>
+                {/* Project Image */}
+                <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+                  <div className="relative">
+                    <div className="absolute -inset-4 bg-neutral-200 dark:bg-neutral-800 rounded-2xl blur-2xl opacity-50" />
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      className="relative w-full h-80 object-cover rounded-2xl border-4 border-white dark:border-neutral-900 shadow-2xl"
                     />
                   </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  className="w-full lg:w-1/2 p-6 sm:p-8 bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200/50 dark:border-neutral-800/50 shadow-xl shadow-purple-500/5 dark:shadow-purple-400/5 flex flex-col justify-between"
-                >
-                  <div className="space-y-4 sm:space-y-6">
-                    <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+                {/* Project Details */}
+                <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
+                  <div className="space-y-4">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-neutral-900 dark:text-neutral-100">
                       {project.title}
                     </h3>
-                    <p className="text-base sm:text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
+                    <p className="text-neutral-600 dark:text-neutral-400 text-lg leading-relaxed">
                       {project.description}
                     </p>
-
-                    <div className="flex flex-wrap gap-4">
-                      {project.technologies.map((tech, techIndex) => (
-                        <TechIcon key={techIndex} tech={tech} />
-                      ))}
-                    </div>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 pt-4">
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, techIndex) => (
+                      <TechIcon key={techIndex} tech={tech} />
+                    ))}
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     {project.github && (
-                      <motion.a
-                        whileHover={{ scale: 1.1 }}
+                      <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 text-neutral-800 dark:text-neutral-200 rounded-lg transition-colors w-full sm:w-auto text-center"
+                        className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-neutral-900 dark:border-neutral-100 text-neutral-900 dark:text-neutral-100 font-medium rounded-lg hover:bg-neutral-900 hover:text-white dark:hover:bg-neutral-100 dark:hover:text-neutral-900 transition-colors duration-200"
                       >
                         <Github className="w-5 h-5" />
-                        <span>View Code</span>
-                      </motion.a>
+                        View Code
+                      </a>
                     )}
                     {project.livedemo && (
-                      <motion.a
-                        whileHover={{ scale: 1.1 }}
+                      <a
                         href={project.livedemo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 rounded-lg hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
+                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors duration-200"
                       >
                         <ExternalLink className="w-5 h-5" />
-                        <span>Live Demo</span>
-                      </motion.a>
+                        Live Demo
+                      </a>
                     )}
                   </div>
-                </motion.div>
+                </div>
               </div>
             </motion.div>
           ))}

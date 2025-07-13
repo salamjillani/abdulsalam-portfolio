@@ -1,8 +1,6 @@
-export const HERO_CONTENT = `Hello, this is Abdul Salam, a full-stack developer passionate about building end-to-end web solutions. I specialize in creating dynamic user experiences, developing scalable backend architectures, designing robust APIs, optimizing databases, and crafting seamless interfaces. With more than a year of experience, I leverage full-stack expertise to drive innovation and deliver impactful solutions.`;
+export const ABOUT_TEXT = `Hello, this is Abdul Salam — a full-stack developer passionate about building complete, end-to-end web solutions. I specialize in creating dynamic user interfaces, scalable backend systems, robust APIs, and optimized databases. With over a year of professional experience, I bring full-stack expertise to deliver smooth and effective digital products.
 
-export const ABOUT_TEXT = `I am a dedicated full-stack developer passionate about building efficient, scalable, and user-friendly web applications. With over a year of experience, I specialize in the MERN stack, as well as WordPress, Webflow, PHP, and MySQL, developing both frontend and backend solutions to enhance user experience and performance.  
-
-Driven by curiosity and a love for problem-solving, I thrive in collaborative environments and continuously seek to learn and innovate. Beyond coding, I explore new technologies, contribute to open-source projects, and stay engaged in the ever-evolving world of web development.`;
+Currently, I’m exploring the field of data science and gradually diving deeper into AI and machine learning as I expand my skill set and interests. I'm also a Level 1 Seller on Fiverr, offering high-quality freelance services to clients worldwide.`;
 
 export const EXPERIENCES = [
    {
