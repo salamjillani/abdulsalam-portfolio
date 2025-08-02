@@ -8,32 +8,44 @@ const testimonials = [
     location: "United States",
     rating: 5,
     text: "Abdul Salam truly impressed with his exceptional expertise in website development, delivering work that exceeded expectations with unmatched professionalism. Collaborating with him was a breeze thanks to his politeness and deep understanding. Highly recommended! 🙌",
-    platform: "Fiverr"
+    platform: "Fiverr",
   },
   {
     name: "mgnitltd",
     location: "United Kingdom",
     rating: 5,
     text: "Good developer, works well and pays attention to detail. The developer is also very helpful in coming up with ideas and suggestions. Great to work with and will hopefully work with them again.",
-    platform: "Fiverr"
+    platform: "Fiverr",
+  },
+  {
+    name: "amanuelgirma186",
+    location: "United States",
+    rating: 5,
+    text: "perfect man I am glad I choose you",
+    platform: "Fiverr",
+  },
+  {
+    name: "amanuelgirma186",
+    location: "United States",
+    rating: 5,
+    text: "I love it we have one more to go.",
+    platform: "Fiverr",
   },
   {
     name: "kailsay",
     location: "China",
     rating: 5,
     text: "Unmatched professionalism and can communicate with me in a friendly manner",
-    platform: "Fiverr"
+    platform: "Fiverr",
   },
   {
     name: "sergisanchezll",
     location: "Spain",
     rating: 5,
     text: "Very good work and very professional",
-    platform: "Fiverr"
-  }
+    platform: "Fiverr",
+  },
 ];
-
-
 
 const TestimonialCard = ({ testimonial, index }) => {
   return (
@@ -52,10 +64,7 @@ const TestimonialCard = ({ testimonial, index }) => {
       {/* Rating */}
       <div className="flex items-center gap-1 mb-4">
         {[...Array(testimonial.rating)].map((_, i) => (
-          <Star
-            key={i}
-            className="w-4 h-4 fill-yellow-400 text-yellow-400"
-          />
+          <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
         ))}
       </div>
 
@@ -118,7 +127,8 @@ const Testimonials = () => {
             What Clients Say
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto ">
-            Trusted by clients worldwide for delivering exceptional development solutions
+            Trusted by clients worldwide for delivering exceptional development
+            solutions
           </p>
         </motion.div>
 
@@ -132,7 +142,6 @@ const Testimonials = () => {
             />
           ))}
         </div>
-
       </div>
     </div>
   );
