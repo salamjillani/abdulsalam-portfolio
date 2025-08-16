@@ -21,6 +21,13 @@ const testimonials = [
     name: "amanuelgirma186",
     location: "United States",
     rating: 5,
+    text: "he made my website he went above and beyond. Thank you",
+    platform: "Fiverr",
+  },
+    {
+    name: "amanuelgirma186",
+    location: "United States",
+    rating: 5,
     text: "perfect man I am glad I choose you",
     platform: "Fiverr",
   },
