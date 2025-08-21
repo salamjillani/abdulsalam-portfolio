@@ -59,6 +59,13 @@ const testimonials = [
     text: "Very good work and very professional",
     platform: "Fiverr",
   },
+    {
+    name: "kailsay",
+    location: "China",
+    rating: 5,
+    text: "Great developer, great communication, Successful delivery",
+    platform: "Fiverr",
+  },
 ];
 
 const TestimonialCard = ({ testimonial, index }) => {
