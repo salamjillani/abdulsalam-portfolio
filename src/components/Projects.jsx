@@ -16,41 +16,41 @@ import {
 } from "react-icons/si";
 
 const TechIcon = ({ tech }) => {
-  const iconProps = { className: "w-5 h-5" };
+  const iconProps = { className: "w-4 h-4 sm:w-5 sm:h-5" };
 
   const techMap = {
-    React: <FaReact {...iconProps} className="w-5 h-5 text-[#61DAFB]" />,
+    React: <FaReact {...iconProps} className="w-4 h-4 sm:w-5 sm:h-5 text-[#61DAFB]" />,
     "Express.js": (
-      <SiExpress {...iconProps} className="w-5 h-5 text-neutral-600" />
+      <SiExpress {...iconProps} className="w-4 h-4 sm:w-5 sm:h-5 text-neutral-600" />
     ),
     "Socket.io": (
       <SiSocketdotio
         {...iconProps}
-        className="w-5 h-5 text-neutral-800 dark:text-neutral-200"
+        className="w-4 h-4 sm:w-5 sm:h-5 text-neutral-800 dark:text-neutral-200"
       />
     ),
-    MongoDB: <SiMongodb {...iconProps} className="w-5 h-5 text-green-600" />,
+    MongoDB: <SiMongodb {...iconProps} className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />,
     Tailwind: (
-      <SiTailwindcss {...iconProps} className="w-5 h-5 text-cyan-600" />
+      <SiTailwindcss {...iconProps} className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-600" />
     ),
     "Tensorflow.js": (
-      <SiTensorflow {...iconProps} className="w-5 h-5 text-orange-600" />
+      <SiTensorflow {...iconProps} className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600" />
     ),
-    WebRTC: <SiWebrtc {...iconProps} className="w-5 h-5 text-neutral-600" />,
-    "Node.js": <FaNodeJs {...iconProps} className="w-5 h-5 text-green-600" />,
-    CSS: <FaCss3Alt {...iconProps} className="w-5 h-5 text-blue-600" />,
+    WebRTC: <SiWebrtc {...iconProps} className="w-4 h-4 sm:w-5 sm:h-5 text-neutral-600" />,
+    "Node.js": <FaNodeJs {...iconProps} className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />,
+    CSS: <FaCss3Alt {...iconProps} className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />,
     "Framer Motion": (
-      <SiFramer {...iconProps} className="w-5 h-5 text-purple-600" />
+      <SiFramer {...iconProps} className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600" />
     ),
     "Three.js": (
-      <SiThreedotjs {...iconProps} className="w-5 h-5 text-neutral-800 dark:text-neutral-200" />
+      <SiThreedotjs {...iconProps} className="w-4 h-4 sm:w-5 sm:h-5 text-neutral-800 dark:text-neutral-200" />
     ),
   };
 
   return (
-    <div className="flex items-center gap-2 px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-300">
+    <div className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-300">
       {techMap[tech] || <FaDatabase {...iconProps} className="text-neutral-500" />}
-      <span>{tech}</span>
+      <span className="truncate">{tech}</span>
     </div>
   );
 };
@@ -93,7 +93,7 @@ const Projects = () => {
 
   const slideVariants = {
     enter: (direction) => ({
-      x: direction > 0 ? 1000 : -1000,
+      x: direction > 0 ? "100%" : "-100%",
       opacity: 0,
       scale: 0.95
     }),
@@ -105,7 +105,7 @@ const Projects = () => {
     },
     exit: (direction) => ({
       zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
+      x: direction < 0 ? "100%" : "-100%",
       opacity: 0,
       scale: 0.95
     })
@@ -117,167 +117,287 @@ const Projects = () => {
   };
 
   return (
-    <div className="font-mono relative min-h-screen py-20 overflow-hidden">
+    <div className="font-mono relative min-h-screen py-8 sm:py-12 md:py-16 lg:py-20 overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-neutral-50 via-white to-neutral-100 dark:from-neutral-900 dark:via-neutral-900 dark:to-neutral-800" />
         <div className="absolute top-0 left-0 w-full h-full opacity-30 dark:opacity-10">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-neutral-200 dark:bg-neutral-700 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/3 left-1/3 w-80 h-80 bg-neutral-300 dark:bg-neutral-600 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 right-1/4 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-neutral-200 dark:bg-neutral-700 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/3 left-1/3 w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 bg-neutral-300 dark:bg-neutral-600 rounded-full blur-3xl" />
         </div>
       </div>
 
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-4xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-100 mb-3 sm:mb-4">
             Featured Projects
           </h2>
-          <p className="text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto px-4">
             A collection of work that showcases my skills and passion for development
           </p>
         </motion.div>
 
         {/* Carousel Container */}
         <div className="relative max-w-7xl mx-auto">
-          {/* Navigation Buttons */}
+          {/* Navigation Buttons - Hidden on mobile, visible on larger screens */}
           <button
             onClick={prevProject}
-            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 p-3 md:p-4 bg-white/90 dark:bg-neutral-800/90 backdrop-blur-sm rounded-full border border-neutral-200 dark:border-neutral-700 hover:bg-white dark:hover:bg-neutral-800 transition-all duration-200 shadow-lg hover:shadow-xl group"
+            className="hidden sm:block absolute left-2 md:left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 lg:p-4 bg-white/90 dark:bg-neutral-800/90 backdrop-blur-sm rounded-full border border-neutral-200 dark:border-neutral-700 hover:bg-white dark:hover:bg-neutral-800 transition-all duration-200 shadow-lg hover:shadow-xl group"
             aria-label="Previous project"
           >
-            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-neutral-700 dark:text-neutral-300 group-hover:text-neutral-900 dark:group-hover:text-neutral-100" />
+            <ChevronLeft className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-neutral-700 dark:text-neutral-300 group-hover:text-neutral-900 dark:group-hover:text-neutral-100" />
           </button>
 
           <button
             onClick={nextProject}
-            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 p-3 md:p-4 bg-white/90 dark:bg-neutral-800/90 backdrop-blur-sm rounded-full border border-neutral-200 dark:border-neutral-700 hover:bg-white dark:hover:bg-neutral-800 transition-all duration-200 shadow-lg hover:shadow-xl group"
+            className="hidden sm:block absolute right-2 md:right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 lg:p-4 bg-white/90 dark:bg-neutral-800/90 backdrop-blur-sm rounded-full border border-neutral-200 dark:border-neutral-700 hover:bg-white dark:hover:bg-neutral-800 transition-all duration-200 shadow-lg hover:shadow-xl group"
             aria-label="Next project"
           >
-            <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-neutral-700 dark:text-neutral-300 group-hover:text-neutral-900 dark:group-hover:text-neutral-100" />
+            <ChevronRight className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-neutral-700 dark:text-neutral-300 group-hover:text-neutral-900 dark:group-hover:text-neutral-100" />
           </button>
 
-          {/* Carousel Content */}
-          <div className="relative h-[600px] md:h-[700px] lg:h-[600px]">
-            <AnimatePresence initial={false} custom={direction} mode="wait">
-              <motion.div
-                key={currentIndex}
-                custom={direction}
-                variants={slideVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{
-                  x: { type: "spring", stiffness: 300, damping: 30 },
-                  opacity: { duration: 0.3 },
-                  scale: { duration: 0.3 }
-                }}
-                drag="x"
-                dragConstraints={{ left: 0, right: 0 }}
-                dragElastic={1}
-                onDragEnd={(e, { offset, velocity }) => {
-                  const swipe = swipePower(offset.x, velocity.x);
-
-                  if (swipe < -swipeConfidenceThreshold) {
-                    nextProject();
-                  } else if (swipe > swipeConfidenceThreshold) {
-                    prevProject();
-                  }
-                }}
-                className="absolute inset-0 cursor-grab active:cursor-grabbing"
-              >
-                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full px-4 lg:px-8">
-                  {/* Project Image */}
-                  <div className={`order-2 lg:order-1 ${
-                    currentIndex % 2 === 1 ? 'lg:order-2' : 'lg:order-1'
-                  }`}>
-                    <div className="relative">
-                      <div className="absolute -inset-4 bg-neutral-200 dark:bg-neutral-800 rounded-2xl blur-2xl opacity-50" />
-                      <motion.img
-                        src={PROJECTS[currentIndex].image}
-                        alt={PROJECTS[currentIndex].title}
-                        className="relative w-full h-64 md:h-80 lg:h-96 object-cover rounded-2xl border-4 border-white dark:border-neutral-900 shadow-2xl"
-                        whileHover={{ scale: 1.02 }}
-                        transition={{ duration: 0.2 }}
-                      />
-                    </div>
-                  </div>
-
-                  {/* Project Details */}
-                  <div className={`space-y-4 lg:space-y-6 order-1 lg:order-2 ${
-                    currentIndex % 2 === 1 ? 'lg:order-1' : 'lg:order-2'
-                  }`}>
-                    <div className="space-y-3 lg:space-y-4">
-                      <motion.h3 
-                        className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 dark:text-neutral-100"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2 }}
-                      >
-                        {PROJECTS[currentIndex].title}
-                      </motion.h3>
-                      <motion.p 
-                        className="text-neutral-600 dark:text-neutral-400 text-base md:text-lg leading-relaxed"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3 }}
-                      >
-                        {PROJECTS[currentIndex].description}
-                      </motion.p>
-                    </div>
-
-                    <motion.div 
-                      className="flex flex-wrap gap-2"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.4 }}
-                    >
-                      {PROJECTS[currentIndex].technologies.map((tech, techIndex) => (
-                        <TechIcon key={techIndex} tech={tech} />
-                      ))}
-                    </motion.div>
-
-                    <motion.div 
-                      className="flex flex-col sm:flex-row gap-3 lg:gap-4 pt-2 lg:pt-4"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.5 }}
-                    >
-                      {PROJECTS[currentIndex].github && (
-                        <a
-                          href={PROJECTS[currentIndex].github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2 px-4 lg:px-6 py-2 lg:py-3 border-2 border-neutral-900 dark:border-neutral-100 text-neutral-900 dark:text-neutral-100 font-medium rounded-lg hover:bg-neutral-900 hover:text-white dark:hover:bg-neutral-100 dark:hover:text-neutral-900 transition-colors duration-200 text-sm lg:text-base"
-                        >
-                          <Github className="w-4 h-4 lg:w-5 lg:h-5" />
-                          View Code
-                        </a>
-                      )}
-                      {PROJECTS[currentIndex].livedemo && (
-                        <a
-                          href={PROJECTS[currentIndex].livedemo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2 px-4 lg:px-6 py-2 lg:py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors duration-200 text-sm lg:text-base"
-                        >
-                          <ExternalLink className="w-4 h-4 lg:w-5 lg:h-5" />
-                          Live Demo
-                        </a>
-                      )}
-                    </motion.div>
-                  </div>
-                </div>
-              </motion.div>
-            </AnimatePresence>
+          {/* Mobile Navigation Buttons */}
+          <div className="sm:hidden flex justify-between items-center mb-4 px-2">
+            <button
+              onClick={prevProject}
+              className="p-2 bg-white/90 dark:bg-neutral-800/90 backdrop-blur-sm rounded-full border border-neutral-200 dark:border-neutral-700 hover:bg-white dark:hover:bg-neutral-800 transition-all duration-200 shadow-lg"
+              aria-label="Previous project"
+            >
+              <ChevronLeft className="w-5 h-5 text-neutral-700 dark:text-neutral-300" />
+            </button>
+            
+            <div className="flex items-center space-x-2">
+              {PROJECTS.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToProject(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === currentIndex
+                      ? 'bg-neutral-900 dark:bg-neutral-100 scale-125'
+                      : 'bg-neutral-300 dark:bg-neutral-600'
+                  }`}
+                  aria-label={`Go to project ${index + 1}`}
+                />
+              ))}
+            </div>
+            
+            <button
+              onClick={nextProject}
+              className="p-2 bg-white/90 dark:bg-neutral-800/90 backdrop-blur-sm rounded-full border border-neutral-200 dark:border-neutral-700 hover:bg-white dark:hover:bg-neutral-800 transition-all duration-200 shadow-lg"
+              aria-label="Next project"
+            >
+              <ChevronRight className="w-5 h-5 text-neutral-700 dark:text-neutral-300" />
+            </button>
           </div>
 
-          {/* Dots Indicator */}
-          <div className="flex justify-center space-x-2 mt-8">
+          {/* Carousel Content */}
+          <div className="relative overflow-hidden">
+            {/* Dynamic height based on screen size */}
+            <div className="h-auto min-h-[500px] sm:min-h-[600px] md:min-h-[650px] lg:min-h-[600px]">
+              <AnimatePresence initial={false} custom={direction} mode="wait">
+                <motion.div
+                  key={currentIndex}
+                  custom={direction}
+                  variants={slideVariants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  transition={{
+                    x: { type: "spring", stiffness: 300, damping: 30 },
+                    opacity: { duration: 0.3 },
+                    scale: { duration: 0.3 }
+                  }}
+                  drag="x"
+                  dragConstraints={{ left: 0, right: 0 }}
+                  dragElastic={1}
+                  onDragEnd={(e, { offset, velocity }) => {
+                    const swipe = swipePower(offset.x, velocity.x);
+
+                    if (swipe < -swipeConfidenceThreshold) {
+                      nextProject();
+                    } else if (swipe > swipeConfidenceThreshold) {
+                      prevProject();
+                    }
+                  }}
+                  className="absolute inset-0 cursor-grab active:cursor-grabbing w-full"
+                >
+                  {/* Mobile Layout (stacked) */}
+                  <div className="block lg:hidden px-4 sm:px-6 md:px-8 py-4">
+                    <div className="space-y-6">
+                      {/* Project Image */}
+                      <div className="relative">
+                        <div className="absolute -inset-2 sm:-inset-4 bg-neutral-200 dark:bg-neutral-800 rounded-2xl blur-2xl opacity-50" />
+                        <motion.img
+                          src={PROJECTS[currentIndex].image}
+                          alt={PROJECTS[currentIndex].title}
+                          className="relative w-full h-48 sm:h-56 md:h-64 object-cover rounded-2xl border-4 border-white dark:border-neutral-900 shadow-2xl"
+                          whileHover={{ scale: 1.02 }}
+                          transition={{ duration: 0.2 }}
+                        />
+                      </div>
+
+                      {/* Project Details */}
+                      <div className="space-y-4">
+                        <div className="space-y-3">
+                          <motion.h3 
+                            className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 dark:text-neutral-100"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2 }}
+                          >
+                            {PROJECTS[currentIndex].title}
+                          </motion.h3>
+                          <motion.p 
+                            className="text-neutral-600 dark:text-neutral-400 text-sm sm:text-base md:text-lg leading-relaxed"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.3 }}
+                          >
+                            {PROJECTS[currentIndex].description}
+                          </motion.p>
+                        </div>
+
+                        <motion.div 
+                          className="flex flex-wrap gap-1.5 sm:gap-2"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.4 }}
+                        >
+                          {PROJECTS[currentIndex].technologies.map((tech, techIndex) => (
+                            <TechIcon key={techIndex} tech={tech} />
+                          ))}
+                        </motion.div>
+
+                        <motion.div 
+                          className="flex flex-col xs:flex-row gap-3 pt-2"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.5 }}
+                        >
+                          {PROJECTS[currentIndex].github && (
+                            <a
+                              href={PROJECTS[currentIndex].github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-neutral-900 dark:border-neutral-100 text-neutral-900 dark:text-neutral-100 font-medium rounded-lg hover:bg-neutral-900 hover:text-white dark:hover:bg-neutral-100 dark:hover:text-neutral-900 transition-colors duration-200 text-sm"
+                            >
+                              <Github className="w-4 h-4" />
+                              View Code
+                            </a>
+                          )}
+                          {PROJECTS[currentIndex].livedemo && (
+                            <a
+                              href={PROJECTS[currentIndex].livedemo}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors duration-200 text-sm"
+                            >
+                              <ExternalLink className="w-4 h-4" />
+                              Live Demo
+                            </a>
+                          )}
+                        </motion.div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Desktop Layout (side by side) */}
+                  <div className="hidden lg:block px-8">
+                    <div className="grid lg:grid-cols-2 gap-12 items-center h-full min-h-[600px]">
+                      {/* Project Image */}
+                      <div className={`${
+                        currentIndex % 2 === 1 ? 'lg:order-2' : 'lg:order-1'
+                      }`}>
+                        <div className="relative">
+                          <div className="absolute -inset-4 bg-neutral-200 dark:bg-neutral-800 rounded-2xl blur-2xl opacity-50" />
+                          <motion.img
+                            src={PROJECTS[currentIndex].image}
+                            alt={PROJECTS[currentIndex].title}
+                            className="relative w-full h-96 object-cover rounded-2xl border-4 border-white dark:border-neutral-900 shadow-2xl"
+                            whileHover={{ scale: 1.02 }}
+                            transition={{ duration: 0.2 }}
+                          />
+                        </div>
+                      </div>
+
+                      {/* Project Details */}
+                      <div className={`space-y-6 ${
+                        currentIndex % 2 === 1 ? 'lg:order-1' : 'lg:order-2'
+                      }`}>
+                        <div className="space-y-4">
+                          <motion.h3 
+                            className="text-4xl font-bold text-neutral-900 dark:text-neutral-100"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2 }}
+                          >
+                            {PROJECTS[currentIndex].title}
+                          </motion.h3>
+                          <motion.p 
+                            className="text-neutral-600 dark:text-neutral-400 text-lg leading-relaxed"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.3 }}
+                          >
+                            {PROJECTS[currentIndex].description}
+                          </motion.p>
+                        </div>
+
+                        <motion.div 
+                          className="flex flex-wrap gap-2"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.4 }}
+                        >
+                          {PROJECTS[currentIndex].technologies.map((tech, techIndex) => (
+                            <TechIcon key={techIndex} tech={tech} />
+                          ))}
+                        </motion.div>
+
+                        <motion.div 
+                          className="flex gap-4 pt-4"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.5 }}
+                        >
+                          {PROJECTS[currentIndex].github && (
+                            <a
+                              href={PROJECTS[currentIndex].github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-neutral-900 dark:border-neutral-100 text-neutral-900 dark:text-neutral-100 font-medium rounded-lg hover:bg-neutral-900 hover:text-white dark:hover:bg-neutral-100 dark:hover:text-neutral-900 transition-colors duration-200"
+                            >
+                              <Github className="w-5 h-5" />
+                              View Code
+                            </a>
+                          )}
+                          {PROJECTS[currentIndex].livedemo && (
+                            <a
+                              href={PROJECTS[currentIndex].livedemo}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 font-medium rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors duration-200"
+                            >
+                              <ExternalLink className="w-5 h-5" />
+                              Live Demo
+                            </a>
+                          )}
+                        </motion.div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </AnimatePresence>
+            </div>
+          </div>
+
+          {/* Desktop Dots Indicator */}
+          <div className="hidden sm:flex justify-center space-x-2 mt-8">
             {PROJECTS.map((_, index) => (
               <button
                 key={index}
