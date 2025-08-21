@@ -24,7 +24,14 @@ const testimonials = [
     text: "he made my website he went above and beyond. Thank you",
     platform: "Fiverr",
   },
-    {
+  {
+    name: "rolandaanwar7x7",
+    location: "United States",
+    rating: 5,
+    text: "Absolutely wonderful seller… Talented.",
+    platform: "Fiverr",
+  },
+  {
     name: "amanuelgirma186",
     location: "United States",
     rating: 5,
