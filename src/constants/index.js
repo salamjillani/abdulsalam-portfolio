@@ -1,6 +1,6 @@
 export const ABOUT_TEXT = `Hello, this is Abdul Salam — a full-stack developer passionate about building complete, end-to-end web solutions. I specialize in creating dynamic user interfaces, scalable backend systems, robust APIs, and optimized databases. With over a year of professional experience, I bring full-stack expertise to deliver smooth and effective digital products.
 
-Currently, I’m exploring the field of data science and gradually diving deeper into AI and machine learning as I expand my skill set and interests. I'm also a Level 1 Seller on Fiverr, offering high-quality freelance services to clients worldwide.`;
+Currently, I’m exploring the field of data science and gradually diving deeper into AI and machine learning as I expand my skill set and interests. I'm also a Level 2 Seller on Fiverr, offering high-quality freelance services to clients worldwide.`;
 
 export const EXPERIENCES = [
    {
