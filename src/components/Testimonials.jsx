@@ -63,14 +63,14 @@ const testimonials = [
     name: "gregadkins126",
     location: "United States",
     rating: 5,
-    text: "Solid work and communications.",
+    text: "Awesome work! Thanks for the speed and quality!",
     platform: "Fiverr",
   },
   {
     name: "gregadkins126",
     location: "United States",
     rating: 5,
-    text: "Awesome work! Thanks for the speed and quality!",
+    text: "Solid work and communications.",
     platform: "Fiverr",
   },
   {
