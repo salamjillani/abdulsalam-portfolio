@@ -10,6 +10,13 @@ const testimonials = [
     text: "Abdul Salam truly impressed with his exceptional expertise in website development, delivering work that exceeded expectations with unmatched professionalism. Collaborating with him was a breeze thanks to his politeness and deep understanding. Highly recommended! 🙌",
     platform: "Fiverr",
   },
+    {
+    name: "yinka871",
+    location: "United States",
+    rating: 5,
+    text: "Absolutely amazing work! The work exceeded my expectations everything was done 100% perfectly. Great communication, fast delivery, and pure professionalism. I highly recommend this seller and will definitely work with them again Great seller",
+    platform: "Fiverr",
+  },
   {
     name: "mgnitltd",
     location: "United Kingdom",
