@@ -10,7 +10,7 @@ const testimonials = [
     text: "Abdul Salam truly impressed with his exceptional expertise in website development, delivering work that exceeded expectations with unmatched professionalism. Collaborating with him was a breeze thanks to his politeness and deep understanding. Highly recommended! 🙌",
     platform: "Fiverr",
   },
-    {
+  {
     name: "yinka871",
     location: "United States",
     rating: 5,
@@ -22,6 +22,13 @@ const testimonials = [
     location: "United Kingdom",
     rating: 5,
     text: "Good developer, works well and pays attention to detail. The developer is also very helpful in coming up with ideas and suggestions. Great to work with and will hopefully work with them again.",
+    platform: "Fiverr",
+  },
+  {
+    name: "gregadkins126",
+    location: "United States",
+    rating: 5,
+    text: "Awesome partner and technical lead.",
     platform: "Fiverr",
   },
   {
