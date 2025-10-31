@@ -24,6 +24,13 @@ const testimonials = [
     text: "Good developer, works well and pays attention to detail. The developer is also very helpful in coming up with ideas and suggestions. Great to work with and will hopefully work with them again.",
     platform: "Fiverr",
   },
+    {
+    name: "gregadkins126",
+    location: "United States",
+    rating: 5,
+    text: "Very strong developer and solid inter-personal communication skills, and commitment to the work.",
+    platform: "Fiverr",
+  },
   {
     name: "gregadkins126",
     location: "United States",
