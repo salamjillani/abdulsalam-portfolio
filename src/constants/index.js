@@ -113,44 +113,6 @@ export const PROJECTS = [
     github: "https://github.com/salamjillani/galaxium",
     livedemo: "https://galaxium.vercel.app/",
   },
-
-  {
-    title: "BookShelf",
-    image: "/assets/projects/project-6.PNG",
-    description:
-      "Web app for managing book collections, featuring user authentication, book CRUD operations, and search.",
-    technologies: ["MongoDB", "Express.js", "React", "Node.js"],
-    github: "https://github.com/salamjillani/bookshelf",
-    livedemo: "",
-  },
-
-  {
-    title: "WeatherNow",
-    image: "/assets/projects/project-7.PNG",
-    description:
-      "Real-time weather app which provides up-to-date weather information using the OpenWeather API.",
-    technologies: ["React", "CSS"],
-    github: "https://github.com/salamjillani/react-weather-app",
-    livedemo: "https://weathernow-zeta.vercel.app/",
-  },
-  {
-    title: "TaskMaster",
-    image: "/assets/projects/project-8.PNG",
-    description:
-      "A To-Do list app built with React.js that stores tasks in local storage. It allows users to add, edit, and remove tasks, keeping them saved even after a page refresh.",
-    technologies: ["React", "CSS"],
-    github: "https://github.com/salamjillani/todo-localstorage-react",
-    livedemo: "https://taskmaster-kappa-ten.vercel.app/",
-  },
-  {
-    title: "QuickCalc",
-    image: "/assets/projects/project-9.PNG",
-    description:
-      "A simple calculator app built with React.js. It allows users to perform basic arithmetic operations with an intuitive interface.",
-    technologies: ["React", "CSS"],
-    github: "https://github.com/salamjillani/calculator-react",
-    livedemo: "https://quickcalc-orcin.vercel.app/",
-  },
 ];
 
 export const CONTACT = {
