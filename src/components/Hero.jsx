@@ -30,15 +30,16 @@ const Hero = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-4xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-100 leading-tight"
               >
-                Hi 👋,<br />
+                Hi 👋,
+                <br />
                 <span className="block mt-4">
                   I&apos;m{" "}
-                  <span className="text-neutral-700 dark:text-neutral-300">
+                  <span className="text-neutral-700 dark:text-neutral-300 whitespace-nowrap">
                     Abdul Salam
                   </span>
                 </span>
               </motion.h1>
-              
+
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
