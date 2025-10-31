@@ -6,7 +6,7 @@ export const EXPERIENCES = [
     role: "Full Stack Developer",
     company: "Sapphire Consulting Services",
     description: `Working and developing full-stack web applications using MERN.`,
-    technologies: ["React", "Express.js", "MongoDB", "Nodejs"],
+    technologies: ["React", "JavaScript", "MongoDB", "Nodejs"],
   },
     {
     year: "Jan 2025 - Present",
@@ -20,7 +20,7 @@ export const EXPERIENCES = [
     role: "Full Stack Developer Internship",
     company: "ANB Tech Solution",
     description: `Worked on full-stack web development, designing user-friendly interfaces, developing and integrating APIs, and optimizing databases for efficient data management.`,
-    technologies: ["React", "JavaScript", "WordPress", "PHP", "MongoDB", "Nodejs", "TailwindCSS"],
+    technologies: ["React", "JavaScript", "Express.js", "MongoDB", "Nodejs", "TailwindCSS"],
   },
   {
     year: "Jan 2022 - Apr 2022",
