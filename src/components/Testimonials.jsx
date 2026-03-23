@@ -10,6 +10,29 @@ const testimonials = [
     text: "Abdul Salam truly impressed with his exceptional expertise in website development, delivering work that exceeded expectations with unmatched professionalism. Collaborating with him was a breeze thanks to his politeness and deep understanding. Highly recommended! 🙌",
     platform: "Fiverr",
   },
+
+  {
+    name: "guusesbir",
+    location: "Netherlands",
+    rating: 5,
+    text: "Abdul Salam was the best coder for our platform! We recommend everyone to have a coder in their team like Abdul. Thank you brother!",
+    platform: "Fiverr",
+  },
+
+  {
+    name: "smithediron20",
+    location: "Bulgaria",
+    rating: 5,
+    text: "Really talented dev. He is excellent at communication especially with how fast and responsive he is. If you're looking for the right devoloper for your project trust me you've come to the right place. I can't possibly recommend him enough...",
+    platform: "Fiverr",
+  },
+  {
+    name: "guusesbir",
+    location: "Netherlands",
+    rating: 5,
+    text: "Excellent experience working with Abdul. The communication was clear, the delivery was fast, and the final result looks very professional. All requested changes were handled quickly and with great attention to detail. Highly recommended for anyone looking for high-quality web design and development. ⭐⭐⭐⭐⭐",
+    platform: "Fiverr",
+  },
   {
     name: "yinka871",
     location: "United States",
@@ -29,6 +52,34 @@ const testimonials = [
     location: "United States",
     rating: 5,
     text: "He's the 'A' team. A highly skilled and on time delivery leader.",
+    platform: "Fiverr",
+  },
+  {
+    name: "irontjennsz",
+    location: "Netherlands",
+    rating: 5,
+    text: "Salam did very well on perfectionizing our webdesign and functionalities! Communication was clear and very kind. Great to work with Salam and we would recommend everyone!",
+    platform: "Fiverr",
+  },
+  {
+    name: "smithediron20",
+    location: "Bulgaria",
+    rating: 5,
+    text: "Abdul has built an entire web app for our SaaS and the experience has been flawless so far. He is never behind the deadline and an absolute delight to work with. I can reccomend his services to anyone and everyone honestly!",
+    platform: "Fiverr",
+  },
+  {
+    name: "smithediron20",
+    location: "Bulgaria",
+    rating: 5,
+    text: "Almost done with our big project and Abdul has been incredible all through out from the first phase to the 5th and final one now. Definitely recommend him for his expertise, flexibility and willingness to understand your project. He's your guy!",
+    platform: "Fiverr",
+  },
+  {
+    name: "guusesbir",
+    location: "Netherlands",
+    rating: 5,
+    text: "Very good development! Our CTO is happy with the coding help of Abdul Salam.",
     platform: "Fiverr",
   },
   {
