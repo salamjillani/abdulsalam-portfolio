@@ -10,7 +10,6 @@ const testimonials = [
     text: "Abdul Salam truly impressed with his exceptional expertise in website development, delivering work that exceeded expectations with unmatched professionalism. Collaborating with him was a breeze thanks to his politeness and deep understanding. Highly recommended! 🙌",
     platform: "Fiverr",
   },
-
   {
     name: "guusesbir",
     location: "Netherlands",
@@ -18,7 +17,6 @@ const testimonials = [
     text: "Abdul Salam was the best coder for our platform! We recommend everyone to have a coder in their team like Abdul. Thank you brother!",
     platform: "Fiverr",
   },
-
   {
     name: "smithediron20",
     location: "Bulgaria",
