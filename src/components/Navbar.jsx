@@ -3,82 +3,47 @@ import { Github, Linkedin, MailIcon, PhoneIcon } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
-  const contactInfo = {
-    linkedin: "https://www.linkedin.com/in/salamjillani",
-    github: "https://github.com/salamjillani",
-    phone: "+923302488872",
-    email: "salamjillani@gmail.com",
-  };
-
   const socialLinks = [
-    {
-      Icon: Linkedin,
-      href: contactInfo.linkedin,
-      hoverTitle: "LinkedIn Profile",
-    },
-    {
-      Icon: Github,
-      href: contactInfo.github,
-      hoverTitle: "GitHub Profile",
-    },
-    {
-      Icon: PhoneIcon,
-      href: `tel:${contactInfo.phone}`,
-      hoverTitle: "Phone Contact",
-    },
-    {
-      Icon: MailIcon,
-      href: `mailto:${contactInfo.email}`,
-      hoverTitle: "Send Email",
-    },
+    { Icon: Linkedin, href: "https://www.linkedin.com/in/salamjillani", label: "LinkedIn" },
+    { Icon: Github, href: "https://github.com/salamjillani", label: "GitHub" },
+    { Icon: PhoneIcon, href: "tel:+923302488872", label: "Phone" },
+    { Icon: MailIcon, href: "mailto:salamjillani@gmail.com", label: "Email" },
   ];
 
   return (
     <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="py-3 sm:py-4 md:py-6 px-4 sm:px-6 fixed top-0 left-0 right-0 z-50"
+      initial={{ y: -80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="fixed top-0 left-0 right-0 z-50 px-4 py-3"
     >
-      <div className="absolute inset-0 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-sm border-b border-neutral-200/50 dark:border-neutral-800/50" />
+      <div className="absolute inset-0 bg-white/85 dark:bg-neutral-950/90 backdrop-blur-md border-b border-neutral-200/70 dark:border-neutral-800/70" />
 
-      <div className="font-mono container mx-auto relative max-w-7xl">
-        <div className="flex items-center justify-between">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex items-center"
-          >
-            <span className="text-lg sm:text-xl md:text-2xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight">
-              SALAM
-            </span>
-          </motion.div>
+      <div className="container mx-auto relative max-w-7xl">
+        <div className="flex items-center justify-between px-2">
+          <a href="#" className="text-lg font-bold text-neutral-900 dark:text-white tracking-tight">
+            SALAM
+          </a>
 
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex items-center gap-2 sm:gap-4 md:gap-6"
-          >
+          <div className="flex items-center gap-2">
             <ThemeToggle />
-            <div className="flex items-center gap-1 sm:gap-2 md:gap-3">
-              {socialLinks.map(({ Icon, href, hoverTitle }, index) => (
+            <div className="flex items-center gap-0.5">
+              {socialLinks.map(({ Icon, href, label }, i) => (
                 <motion.a
-                  key={index}
+                  key={i}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors duration-200"
-                  title={hoverTitle}
+                  className="flex items-center justify-center w-8 h-8 rounded-lg text-neutral-400 dark:text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all duration-200"
+                  title={label}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <Icon className="w-4 h-4" />
                 </motion.a>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </motion.nav>

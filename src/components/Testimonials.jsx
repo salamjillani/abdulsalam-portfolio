@@ -3,205 +3,63 @@ import PropTypes from "prop-types";
 import { Star, Quote } from "lucide-react";
 
 const testimonials = [
-  {
-    name: "rolandaanwar7x7",
-    location: "United States",
-    rating: 5,
-    text: "Abdul Salam truly impressed with his exceptional expertise in website development, delivering work that exceeded expectations with unmatched professionalism. Collaborating with him was a breeze thanks to his politeness and deep understanding. Highly recommended! 🙌",
-    platform: "Fiverr",
-  },
-  {
-    name: "guusesbir",
-    location: "Netherlands",
-    rating: 5,
-    text: "Abdul Salam was the best coder for our platform! We recommend everyone to have a coder in their team like Abdul. Thank you brother!",
-    platform: "Fiverr",
-  },
-  {
-    name: "smithediron20",
-    location: "Bulgaria",
-    rating: 5,
-    text: "Really talented dev. He is excellent at communication especially with how fast and responsive he is. If you're looking for the right devoloper for your project trust me you've come to the right place. I can't possibly recommend him enough...",
-    platform: "Fiverr",
-  },
-  {
-    name: "guusesbir",
-    location: "Netherlands",
-    rating: 5,
-    text: "Excellent experience working with Abdul. The communication was clear, the delivery was fast, and the final result looks very professional. All requested changes were handled quickly and with great attention to detail. Highly recommended for anyone looking for high-quality web design and development. ⭐⭐⭐⭐⭐",
-    platform: "Fiverr",
-  },
-  {
-    name: "yinka871",
-    location: "United States",
-    rating: 5,
-    text: "Absolutely amazing work! The work exceeded my expectations everything was done 100% perfectly. Great communication, fast delivery, and pure professionalism. I highly recommend this seller and will definitely work with them again Great seller",
-    platform: "Fiverr",
-  },
-  {
-    name: "mgnitltd",
-    location: "United Kingdom",
-    rating: 5,
-    text: "Good developer, works well and pays attention to detail. The developer is also very helpful in coming up with ideas and suggestions. Great to work with and will hopefully work with them again.",
-    platform: "Fiverr",
-  },
-  {
-    name: "gregadkins126",
-    location: "United States",
-    rating: 5,
-    text: "He's the 'A' team. A highly skilled and on time delivery leader.",
-    platform: "Fiverr",
-  },
-  {
-    name: "irontjennsz",
-    location: "Netherlands",
-    rating: 5,
-    text: "Salam did very well on perfectionizing our webdesign and functionalities! Communication was clear and very kind. Great to work with Salam and we would recommend everyone!",
-    platform: "Fiverr",
-  },
-  {
-    name: "smithediron20",
-    location: "Bulgaria",
-    rating: 5,
-    text: "Abdul has built an entire web app for our SaaS and the experience has been flawless so far. He is never behind the deadline and an absolute delight to work with. I can reccomend his services to anyone and everyone honestly!",
-    platform: "Fiverr",
-  },
-  {
-    name: "smithediron20",
-    location: "Bulgaria",
-    rating: 5,
-    text: "Almost done with our big project and Abdul has been incredible all through out from the first phase to the 5th and final one now. Definitely recommend him for his expertise, flexibility and willingness to understand your project. He's your guy!",
-    platform: "Fiverr",
-  },
-  {
-    name: "guusesbir",
-    location: "Netherlands",
-    rating: 5,
-    text: "Very good development! Our CTO is happy with the coding help of Abdul Salam.",
-    platform: "Fiverr",
-  },
-  {
-    name: "gregadkins126",
-    location: "United States",
-    rating: 5,
-    text: "Awesome partner and technical lead.",
-    platform: "Fiverr",
-  },
-  {
-    name: "amanuelgirma186",
-    location: "United States",
-    rating: 5,
-    text: "he made my website he went above and beyond. Thank you",
-    platform: "Fiverr",
-  },
-  {
-    name: "gregadkins126",
-    location: "United States",
-    rating: 5,
-    text: "Very strong developer and solid inter-personal communication skills, and commitment to the work.",
-    platform: "Fiverr",
-  },
-  {
-    name: "rolandaanwar7x7",
-    location: "United States",
-    rating: 5,
-    text: "Absolutely wonderful seller… Talented.",
-    platform: "Fiverr",
-  },
-  {
-    name: "amanuelgirma186",
-    location: "United States",
-    rating: 5,
-    text: "perfect man I am glad I choose you",
-    platform: "Fiverr",
-  },
-  {
-    name: "amanuelgirma186",
-    location: "United States",
-    rating: 5,
-    text: "I love it we have one more to go.",
-    platform: "Fiverr",
-  },
-  {
-    name: "kailsay",
-    location: "China",
-    rating: 5,
-    text: "Unmatched professionalism and can communicate with me in a friendly manner",
-    platform: "Fiverr",
-  },
-  {
-    name: "sergisanchezll",
-    location: "Spain",
-    rating: 5,
-    text: "Very good work and very professional",
-    platform: "Fiverr",
-  },
-  {
-    name: "gregadkins126",
-    location: "United States",
-    rating: 5,
-    text: "Awesome work! Thanks for the speed and quality!",
-    platform: "Fiverr",
-  },
-  {
-    name: "gregadkins126",
-    location: "United States",
-    rating: 5,
-    text: "Solid work and communications.",
-    platform: "Fiverr",
-  },
-  {
-    name: "kailsay",
-    location: "China",
-    rating: 5,
-    text: "Great developer, great communication, Successful delivery",
-    platform: "Fiverr",
-  },
+  { name: "rolandaanwar7x7", location: "United States", rating: 5, text: "Abdul Salam truly impressed with his exceptional expertise in website development, delivering work that exceeded expectations with unmatched professionalism. Collaborating with him was a breeze thanks to his politeness and deep understanding. Highly recommended!" },
+  { name: "guusesbir", location: "Netherlands", rating: 5, text: "Abdul Salam was the best coder for our platform! We recommend everyone to have a coder in their team like Abdul. Thank you brother!" },
+  { name: "smithediron20", location: "Bulgaria", rating: 5, text: "Really talented dev. He is excellent at communication especially with how fast and responsive he is. If you're looking for the right developer for your project trust me you've come to the right place." },
+  { name: "guusesbir", location: "Netherlands", rating: 5, text: "Excellent experience working with Abdul. The communication was clear, the delivery was fast, and the final result looks very professional. All requested changes were handled quickly and with great attention to detail." },
+  { name: "yinka871", location: "United States", rating: 5, text: "Absolutely amazing work! Everything was done 100% perfectly. Great communication, fast delivery, and pure professionalism. I highly recommend this seller and will definitely work with them again." },
+  { name: "mgnitltd", location: "United Kingdom", rating: 5, text: "Good developer, works well and pays attention to detail. The developer is also very helpful in coming up with ideas and suggestions. Great to work with." },
+  { name: "gregadkins126", location: "United States", rating: 5, text: "He's the 'A' team. A highly skilled and on time delivery leader." },
+  { name: "irontjennsz", location: "Netherlands", rating: 5, text: "Salam did very well on perfecting our webdesign and functionalities! Communication was clear and very kind. Great to work with Salam and we would recommend everyone!" },
+  { name: "smithediron20", location: "Bulgaria", rating: 5, text: "Abdul has built an entire web app for our SaaS and the experience has been flawless. He is never behind the deadline and an absolute delight to work with." },
+  { name: "smithediron20", location: "Bulgaria", rating: 5, text: "Almost done with our big project and Abdul has been incredible throughout from the first phase to the last. Definitely recommend him for his expertise, flexibility and willingness to understand your project." },
+  { name: "guusesbir", location: "Netherlands", rating: 5, text: "Very good development! Our CTO is happy with the coding help of Abdul Salam." },
+  { name: "gregadkins126", location: "United States", rating: 5, text: "Awesome partner and technical lead." },
+  { name: "amanuelgirma186", location: "United States", rating: 5, text: "He made my website — he went above and beyond. Thank you." },
+  { name: "gregadkins126", location: "United States", rating: 5, text: "Very strong developer and solid inter-personal communication skills, and commitment to the work." },
+  { name: "rolandaanwar7x7", location: "United States", rating: 5, text: "Absolutely wonderful seller… Talented." },
+  { name: "kailsay", location: "China", rating: 5, text: "Unmatched professionalism and can communicate in a friendly manner." },
+  { name: "sergisanchezll", location: "Spain", rating: 5, text: "Very good work and very professional." },
+  { name: "gregadkins126", location: "United States", rating: 5, text: "Awesome work! Thanks for the speed and quality!" },
+  { name: "kailsay", location: "China", rating: 5, text: "Great developer, great communication, successful delivery." },
+  { name: "guusesbir", location: "Netherlands", rating: 5, text: "Everything went perfectly! Briefing was clear for Abdul and changes were done fast and correctly. Very nice to work with Abdul!" },
+  { name: "guusesbir", location: "Netherlands", rating: 5, text: "Fast and good development — jobs are finished by Abdul Salam, thank you!" },
+  { name: "guusesbir", location: "Netherlands", rating: 5, text: "The best coder so far from Fiverr who has worked on our projects!" },
+  { name: "rolandaanwar7x7", location: "United States", rating: 5, text: "Despite personal circumstances, Abdul remained committed to the success and progress of the project. His professionalism, communication, dedication, and technical expertise were truly outstanding." },
+  { name: "gregadkins126", location: "United States", rating: 5, text: "Another great delivery. Consistent quality and always on time." },
+  { name: "amanuelgirma186", location: "United States", rating: 5, text: "Perfect man — I am glad I chose you." },
+  { name: "guusesbir", location: "Netherlands", rating: 5, text: "The results look very professional and we will keep working with Abdul on future projects." },
+  { name: "gregadkins126", location: "United States", rating: 5, text: "Solid work and communications. Reliable every time." },
 ];
 
-const TestimonialCard = ({ testimonial, index }) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
-      viewport={{ once: true }}
-      className="relative bg-white dark:bg-neutral-800 rounded-lg p-6 shadow-lg border border-neutral-200 dark:border-neutral-700 hover:shadow-xl transition-shadow duration-300"
-    >
-      {/* Quote Icon */}
-      <div className="absolute top-4 right-4 text-neutral-300 dark:text-neutral-600">
-        <Quote className="w-6 h-6" />
-      </div>
+const half = Math.ceil(testimonials.length / 2);
+const row1 = testimonials.slice(0, half);
+const row2 = testimonials.slice(half);
 
-      {/* Rating */}
-      <div className="flex items-center gap-1 mb-4">
+const TestimonialCard = ({ testimonial }) => (
+  <div className="flex-shrink-0 w-[300px] sm:w-[340px] bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-5">
+    <div className="flex items-center justify-between mb-3">
+      <div className="flex gap-0.5">
         {[...Array(testimonial.rating)].map((_, i) => (
-          <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+          <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
         ))}
       </div>
-
-      {/* Testimonial Text */}
-      <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6 text-sm lg:text-base">
-        &quot;{testimonial.text}&quot;
-      </p>
-
-      {/* Client Info */}
-      <div className="flex items-center justify-between">
-        <div>
-          <h4 className="font-medium text-neutral-900 dark:text-neutral-100">
-            {testimonial.name}
-          </h4>
-          <p className="text-sm text-neutral-500 dark:text-neutral-400">
-            {testimonial.location}
-          </p>
-        </div>
-        <div className="text-xs text-neutral-400 dark:text-neutral-500 bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-          {testimonial.platform}
-        </div>
+      <Quote className="w-4 h-4 text-neutral-300 dark:text-neutral-600" />
+    </div>
+    <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed mb-4 line-clamp-3">
+      &ldquo;{testimonial.text}&rdquo;
+    </p>
+    <div className="flex items-center justify-between">
+      <div>
+        <p className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">{testimonial.name}</p>
+        <p className="text-xs text-neutral-400 dark:text-neutral-500 mt-0.5">{testimonial.location}</p>
       </div>
-    </motion.div>
-  );
-};
+      <span className="text-[10px] font-medium text-neutral-500 dark:text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded">
+        Fiverr
+      </span>
+    </div>
+  </div>
+);
 
 TestimonialCard.propTypes = {
   testimonial: PropTypes.shape({
@@ -209,53 +67,57 @@ TestimonialCard.propTypes = {
     location: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
     text: PropTypes.string.isRequired,
-    platform: PropTypes.string.isRequired,
   }).isRequired,
-  index: PropTypes.number.isRequired,
 };
 
 const Testimonials = () => {
   return (
-    <div className="font-mono relative py-20 mt-20">
-      {/* Background Pattern - Similar to Hero */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-neutral-50 via-white to-neutral-100 dark:from-neutral-900 dark:via-neutral-900 dark:to-neutral-800" />
-        <div className="absolute top-0 left-0 w-full h-full opacity-30 dark:opacity-10">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-neutral-200 dark:bg-neutral-700 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/3 left-1/3 w-80 h-80 bg-neutral-300 dark:bg-neutral-600 rounded-full blur-3xl" />
-        </div>
-      </div>
-
-      <div className="container mx-auto px-6">
-        {/* Section Header */}
+    <section className="relative py-24 lg:py-32 border-t border-neutral-100 dark:border-neutral-900 overflow-hidden">
+      {/* Header */}
+      <div className="container mx-auto px-6 lg:px-8 mb-14">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          transition={{ duration: 0.7 }}
+          className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-            What Clients Say
-          </h2>
-          <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto ">
-            Trusted by clients worldwide for delivering exceptional development
-            solutions
-          </p>
+          <div>
+            <p className="text-sm font-semibold text-violet-600 dark:text-violet-400 uppercase tracking-widest mb-3">
+              Client Reviews
+            </p>
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-white">
+              What Clients Say
+            </h2>
+          </div>
+          <div className="flex gap-8 sm:gap-12 flex-shrink-0">
+            {[
+              { value: "27+", label: "Reviews" },
+              { value: "5.0★", label: "Rating" },
+            ].map((s, i) => (
+              <div key={i}>
+                <div className="text-2xl font-bold text-neutral-900 dark:text-white">{s.value}</div>
+                <div className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">{s.label}</div>
+              </div>
+            ))}
+          </div>
         </motion.div>
+      </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              testimonial={testimonial}
-              index={index}
-            />
-          ))}
+      {/* Marquee */}
+      <div className="marquee-container space-y-4">
+        <div className="flex gap-4 animate-marquee w-max">
+          {[...row1, ...row1].map((t, i) => <TestimonialCard key={i} testimonial={t} />)}
+        </div>
+        <div className="flex gap-4 animate-marquee-reverse w-max">
+          {[...row2, ...row2].map((t, i) => <TestimonialCard key={i} testimonial={t} />)}
         </div>
       </div>
-    </div>
+
+      {/* Edge fades */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white dark:from-neutral-950 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white dark:from-neutral-950 to-transparent" />
+    </section>
   );
 };
 
