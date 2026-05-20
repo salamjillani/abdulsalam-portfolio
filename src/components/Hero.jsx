@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { DownloadIcon, ArrowRight } from "lucide-react";
 
-const profilePicture = "/pic.png";
+const profilePicture = "/pic.webp";
 
 const Hero = () => {
   return (
